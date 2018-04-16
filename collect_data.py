@@ -1,5 +1,7 @@
 from twarc import Twarc
 import json
+import pandas as pd
+import numpy as np
 
 cred = json.load(open("./twitter_credentials"))
 
@@ -32,6 +34,40 @@ def get_attributes_on_users():
                 outp.write(temp_info+'\n')
                 outp.flush()
 
+def get_id_from_username():
+
+    #https://github.com/klout/opendata/blob/master/political_leaning/README.md
+    with open("./data/political_leaning.csv") as input, open("./data/political_leaning_with_ids.csv",'w+') as output:
+        users = pd.read_csv(input)
+        users.set_index(users.columns[0])
+        all_users = []
+        for i, user in users.iterrows():
+            all_users.append(user.user_name)
+
+        temp = {}
+        for user in t.user_lookup(all_users,id_type="screen_name"):
+            temp[user['screen_name']] = user['id']
+
+
+
+        twitter_dict = pd.DataFrame(list(temp.items()), columns=['user_name','id'])
+        twitter_dict.set_index(twitter_dict.columns[0])
+        new = pd.merge(users, twitter_dict, on='user_name', how='left')
+        new = new[np.isfinite(new['id'])]
+        new = new[['id','user_name','leaning']]
+        new.to_csv(output,index=False)
+
+
+
+
+
+
+
+
+def get_lists():
+    t.list_members()
+
 #download_users("realDonaldTrump")
 
-get_attributes_on_users()
+#get_attributes_on_users()
+get_id_from_username()
