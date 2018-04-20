@@ -107,10 +107,13 @@ def get_followers():
                     friends.append(id)
             except:
                 print(user)
-            follower_string = '[' + ','.join(str(e) for e in followers) + ']'
-            friend_string = '[' + ','.join(str(e) for e in friends) + ']'
+            follower_string = '"[' + ','.join(str(e) for e in followers) + ']"'
+            friend_string = '"[' + ','.join(str(e) for e in friends) + ']"'
             output.write(str(user) + ',' + follower_string + ',' + friend_string + '\n')
             output.flush()
+
+
+from ast import literal_eval
 
 
 def create_network_graph():
@@ -118,13 +121,13 @@ def create_network_graph():
         node = int(node)
         label = str(label)
         if not graph.has_node(node):
-            graph.add_node(node, attr_dict={'weight': 1, 'label': label, 'leaning':leaning})
+            graph.add_node(node, weight=1, label=label, leaning=leaning)
         else:
             graph.node[node]['weight'] += 1
             graph.node[node]['label'] = label
-            graph.node[node]['leaning']= leaning
+            graph.node[node]['leaning'] = leaning
 
-    def add_edge(graph, node_1, label_1,leaning_1, node_2, label_2, leaning_2):
+    def add_edge(graph, node_1, label_1, leaning_1, node_2, label_2, leaning_2):
         node_1 = int(node_1)
         node_2 = int(node_2)
 
@@ -136,10 +139,10 @@ def create_network_graph():
 
         if not graph.has_edge(node_1, node_2):
             if not graph.has_node(node_1):
-                graph.add_node(node_1, attr_dict={'weight': 1, 'label': label_1,'leaning':leaning_1})
+                graph.add_node(node_1, weight= 1, label= label_1, leaning = leaning_1)
             if not graph.has_node(node_2):
-                graph.add_node(node_2, attr_dict={'weight': 1, 'label': label_2,'leaning':leaning_2})
-            graph.add_edge(node_1, node_2, attr_dict={'weight': 1})
+                graph.add_node(node_2, weight= 1, label=  label_2, leaning =  leaning_2)
+            graph.add_edge(node_1, node_2, weight = 1)
         else:
             graph[node_1][node_2]['weight'] += 1
 
@@ -148,11 +151,12 @@ def create_network_graph():
         nx.write_graphml(graph, output_path)
 
     def print_info(graph):
+        list_of_degrees = [val for (node, val) in graph.degree()]
         print('--------------------------------------')
         print('Number of nodes: ' + str(graph.number_of_nodes()))
         print('Number of edges: ' + str(graph.number_of_edges()))
         print('Average degree: ' + str(
-            round(float(sum(graph.degree().values())) / float(graph.number_of_nodes()), 2)))
+            round(float(sum(list_of_degrees)) / float(graph.number_of_nodes()), 2)))
 
         avg_sum = 0
         for _, data in graph.nodes(data=True):
@@ -162,21 +166,24 @@ def create_network_graph():
         print('--------------------------------------')
 
     with open("./data/network_data.csv", 'r') as input, open("./data/political_leaning_with_ids.csv", 'r') as input_2:
-        network_data = pd.read_csv(input)
-        leaning_data = pd.read(input_2)
-        leaning_data.set_index('ids')
+        network_data = pd.read_csv(input, converters={'followers': literal_eval, 'friends': literal_eval})
+        leaning_data = pd.read_csv(input_2)
+        leaning_data.id = leaning_data.id.astype(int)
+        leaning_data = leaning_data.set_index('id')
 
     graph = nx.Graph()
     for _, row in network_data.iterrows():
-        name, leaning = leaning_data.at[row['id'],'user_name'],leaning_data.at[row['id'],'leaning']
+        a = row['id']
+        name = leaning_data.at[a, 'user_name']
+        leaning = leaning_data.at[a, 'leaning']
         add_node(graph, row['id'], name, leaning)
         for follower in row['followers']:
-            add_edge(graph, row['id'], name, follower, str(follower))
+            add_edge(graph, row['id'], name, leaning, follower, str(follower), 'Unknown')
         for friend in row['friends']:
-            add_edge(graph, row['id'], name, friend, str(friend))
+            add_edge(graph, row['id'], name, leaning, friend, str(friend), 'Unknown')
 
     print_info(graph)
-    write_graphml(graph, "test_graph.graphml")
+    write_graphml(graph, "./data/test_graph.graphml")
 
 
 def get_stats(threshold):
@@ -192,4 +199,6 @@ def get_stats(threshold):
         print(a / 5000 * 15 + b / 5000 * 15)
         print((threshold * len(df) / 5000 * 15) / 60)
 
-get_followers()
+
+#get_followers()
+create_network_graph()
