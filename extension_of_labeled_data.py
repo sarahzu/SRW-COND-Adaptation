@@ -1,5 +1,6 @@
 import networkx as nx
 import math
+import operator
 
 cond_on_iteration = {}
 
@@ -38,8 +39,7 @@ def extend_labeled_data(total_graph):
                 sub_b_neg = total_graph.subgraph(B_neg)
                 calculate_condactance(i,sub_a_pos,sub_b_neg)
                 argmax[node] = cond_on_iteration[i]
-        b = max(argmax.items(), key=lambda key: argmax[key])
-
+        b = max(argmax.items(), key=operator.itemgetter(1))[0]
         A_pos.append(b)
         B_neg.pop(b)
 
