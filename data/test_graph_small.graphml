@@ -1,0 +1,3582 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key attr.name="weight" attr.type="long" for="edge" id="d3"/>
+<key attr.name="leaning" attr.type="string" for="node" id="d2"/>
+<key attr.name="label" attr.type="string" for="node" id="d1"/>
+<key attr.name="weight" attr.type="long" for="node" id="d0"/>
+<graph edgedefault="undirected"><node id="55441424">
+  <data key="d0">1</data>
+  <data key="d1">cudems</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="259287056">
+  <data key="d0">1</data>
+  <data key="d1">RepGibbons</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="19812372">
+  <data key="d0">1</data>
+  <data key="d1">sarinninja</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="103108640">
+  <data key="d0">1</data>
+  <data key="d1">JayJacobs28</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="1112289313">
+  <data key="d0">1</data>
+  <data key="d1">RepJamesFrank</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="15011877">
+  <data key="d0">1</data>
+  <data key="d1">JerMeansWell</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="165675063">
+  <data key="d0">2</data>
+  <data key="d1">dwoodward_</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="161148986">
+  <data key="d0">1</data>
+  <data key="d1">JReardonKC</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="68214846">
+  <data key="d0">1</data>
+  <data key="d1">stephenlargen</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="326701121">
+  <data key="d0">1</data>
+  <data key="d1">kundan_scorpio</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="24430658">
+  <data key="d0">1</data>
+  <data key="d1">samanthakerkman</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="34768966">
+  <data key="d0">2</data>
+  <data key="d1">TYRF</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="1443911">
+  <data key="d0">1</data>
+  <data key="d1">stevis</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="716290129">
+  <data key="d0">2</data>
+  <data key="d1">kimdhammer</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="3026622545">
+  <data key="d0">1</data>
+  <data key="d1">RepAmata</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="22036565">
+  <data key="d0">1</data>
+  <data key="d1">zpleat</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="15173738">
+  <data key="d0">1</data>
+  <data key="d1">EricHansen</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="275384428">
+  <data key="d0">1</data>
+  <data key="d1">BlueInRedZion</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="138750068">
+  <data key="d0">1</data>
+  <data key="d1">justtneeraj</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="2900023413">
+  <data key="d0">1</data>
+  <data key="d1">schousespeaker</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="972898423">
+  <data key="d0">1</data>
+  <data key="d1">Leroy_Garcia</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="28715128">
+  <data key="d0">1</data>
+  <data key="d1">FannyLawren</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="28983417">
+  <data key="d0">1</data>
+  <data key="d1">nuestrasalud</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="473430143">
+  <data key="d0">1</data>
+  <data key="d1">Bill_Haufe</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="363143296">
+  <data key="d0">2</data>
+  <data key="d1">MaryLynnMagar</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="65726596">
+  <data key="d0">1</data>
+  <data key="d1">KenLewisNC</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="19593351">
+  <data key="d0">1</data>
+  <data key="d1">jltho</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="14551176">
+  <data key="d0">1</data>
+  <data key="d1">michaelbeach</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="15229068">
+  <data key="d0">1</data>
+  <data key="d1">enricogasbarra</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="17975444">
+  <data key="d0">1</data>
+  <data key="d1">pd_shutterspeed</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="66209943">
+  <data key="d0">1</data>
+  <data key="d1">smittie61984</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="523874457">
+  <data key="d0">1</data>
+  <data key="d1">RevealPolitics</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="733898910">
+  <data key="d0">1</data>
+  <data key="d1">ChadLupinacci</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="904767654">
+  <data key="d0">1</data>
+  <data key="d1">RepJohnOtto</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="122994855">
+  <data key="d0">1</data>
+  <data key="d1">kantele10</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="487813295">
+  <data key="d0">1</data>
+  <data key="d1">G_Stubblefield</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="22425776">
+  <data key="d0">1</data>
+  <data key="d1">stanleycox</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="21092528">
+  <data key="d0">1</data>
+  <data key="d1">Alison_McHose</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="100583605">
+  <data key="d0">2</data>
+  <data key="d1">jaybarnes5</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="241948855">
+  <data key="d0">1</data>
+  <data key="d1">briandaitken</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="15378621">
+  <data key="d0">1</data>
+  <data key="d1">danburton</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="18931904">
+  <data key="d0">1</data>
+  <data key="d1">iowacrs</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="69357767">
+  <data key="d0">1</data>
+  <data key="d1">RepWendyMac</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="231973064">
+  <data key="d0">1</data>
+  <data key="d1">HerbFrierson</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="294177000">
+  <data key="d0">1</data>
+  <data key="d1">DelegateTRust</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="2962274537">
+  <data key="d0">2</data>
+  <data key="d1">AMCarrieWoerner</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="1888489706">
+  <data key="d0">1</data>
+  <data key="d1">MarilysLLT51</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="18288876">
+  <data key="d0">1</data>
+  <data key="d1">cary_weston</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="317309166">
+  <data key="d0">1</data>
+  <data key="d1">VanDrewTeam</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="3003867376">
+  <data key="d0">1</data>
+  <data key="d1">SenTartaglione</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="1067714802">
+  <data key="d0">1</data>
+  <data key="d1">PolitiCarty</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="170111219">
+  <data key="d0">1</data>
+  <data key="d1">LloydDoggettTX</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="248234228">
+  <data key="d0">2</data>
+  <data key="d1">SenJoeVitale</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="21178616">
+  <data key="d0">1</data>
+  <data key="d1">MaryOFAJane</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="158169343">
+  <data key="d0">1</data>
+  <data key="d1">HarloHaven</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="84615425">
+  <data key="d0">1</data>
+  <data key="d1">knifework</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="479017220">
+  <data key="d0">1</data>
+  <data key="d1">TeamJeffries</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="729653510">
+  <data key="d0">1</data>
+  <data key="d1">afeistyliberal</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="27973899">
+  <data key="d0">2</data>
+  <data key="d1">bmwheeler</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="2978992402">
+  <data key="d0">1</data>
+  <data key="d1">RepRohrkaste</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="20959509">
+  <data key="d0">1</data>
+  <data key="d1">cuademocrats</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="24312086">
+  <data key="d0">1</data>
+  <data key="d1">hauserdan</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="469610782">
+  <data key="d0">2</data>
+  <data key="d1">Kevin_BaconOH</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="143587617">
+  <data key="d0">1</data>
+  <data key="d1">Erikka_Storch</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="206496034">
+  <data key="d0">1</data>
+  <data key="d1">rockjejeya</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="39371046">
+  <data key="d0">1</data>
+  <data key="d1">RyanLyk</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="1375306027">
+  <data key="d0">1</data>
+  <data key="d1">DoverNHDems</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="2838018347">
+  <data key="d0">1</data>
+  <data key="d1">Celebrilizer</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="346892589">
+  <data key="d0">1</data>
+  <data key="d1">JJHunt10</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="1025077550">
+  <data key="d0">2</data>
+  <data key="d1">RepSnyder</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="273459512">
+  <data key="d0">1</data>
+  <data key="d1">Ksmcdon</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="21172539">
+  <data key="d0">1</data>
+  <data key="d1">dougsheridan</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="19372353">
+  <data key="d0">2</data>
+  <data key="d1">mizzoudems</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="47255876">
+  <data key="d0">1</data>
+  <data key="d1">DH_Cohen</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="1249800524">
+  <data key="d0">1</data>
+  <data key="d1">RepDwightKay</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="2616580429">
+  <data key="d0">1</data>
+  <data key="d1">Dems4PublicEd</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="435128656">
+  <data key="d0">1</data>
+  <data key="d1">SenatorDilan</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="151574869">
+  <data key="d0">1</data>
+  <data key="d1">Irahansen</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="29552986">
+  <data key="d0">1</data>
+  <data key="d1">MissouriNEA</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="99811678">
+  <data key="d0">1</data>
+  <data key="d1">stacyritter</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="2389709155">
+  <data key="d0">2</data>
+  <data key="d1">MarkPJonesTX</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="1531472228">
+  <data key="d0">1</data>
+  <data key="d1">RandyFrye3</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="55724388">
+  <data key="d0">1</data>
+  <data key="d1">danstec</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="2366200170">
+  <data key="d0">1</data>
+  <data key="d1">DrTomTakubo</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="208212331">
+  <data key="d0">1</data>
+  <data key="d1">RoyCho5</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="214073707">
+  <data key="d0">1</data>
+  <data key="d1">AndrewTobias</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="21266799">
+  <data key="d0">1</data>
+  <data key="d1">ocrp</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="36837753">
+  <data key="d0">1</data>
+  <data key="d1">bcrowe2</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="9888122">
+  <data key="d0">1</data>
+  <data key="d1">heatherwest</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="2927384962">
+  <data key="d0">1</data>
+  <data key="d1">senatorscavello</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="571978114">
+  <data key="d0">1</data>
+  <data key="d1">larosamike</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="23081351">
+  <data key="d0">1</data>
+  <data key="d1">GaleJonesCarson</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="426809736">
+  <data key="d0">1</data>
+  <data key="d1">RepJackFranks</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="103922067">
+  <data key="d0">1</data>
+  <data key="d1">IkeSkelton</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="16208276">
+  <data key="d0">1</data>
+  <data key="d1">FreedomUSA4</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="23894420">
+  <data key="d0">2</data>
+  <data key="d1">ChicagoGOP</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="2932615572">
+  <data key="d0">1</data>
+  <data key="d1">SenBobHall</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="19728788">
+  <data key="d0">1</data>
+  <data key="d1">lindachapalavia</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="14111127">
+  <data key="d0">1</data>
+  <data key="d1">jvreeland</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="451639706">
+  <data key="d0">1</data>
+  <data key="d1">EllenRosenblum</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="102803873">
+  <data key="d0">1</data>
+  <data key="d1">JacksonLee18</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="1264040353">
+  <data key="d0">1</data>
+  <data key="d1">H_Dariyabadi</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="51374505">
+  <data key="d0">2</data>
+  <data key="d1">OregonGOP</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="34173355">
+  <data key="d0">1</data>
+  <data key="d1">GOPMurphy</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="218759595">
+  <data key="d0">1</data>
+  <data key="d1">MikeTagert</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="117150125">
+  <data key="d0">1</data>
+  <data key="d1">SoutherlandFL02</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="27877804">
+  <data key="d0">1</data>
+  <data key="d1">RepFinney</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="184621488">
+  <data key="d0">1</data>
+  <data key="d1">UNCYoungDems</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="59238835">
+  <data key="d0">1</data>
+  <data key="d1">GarthCorriveau</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="110600629">
+  <data key="d0">1</data>
+  <data key="d1">KevinKuros</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="105181623">
+  <data key="d0">1</data>
+  <data key="d1">portman4senate</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="243677635">
+  <data key="d0">1</data>
+  <data key="d1">RepJohnZerwas</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="198572491">
+  <data key="d0">1</data>
+  <data key="d1">TexansForTommy</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="312093132">
+  <data key="d0">1</data>
+  <data key="d1">aspirational12</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="40772047">
+  <data key="d0">2</data>
+  <data key="d1">OUCRs</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="34705879">
+  <data key="d0">1</data>
+  <data key="d1">billnewtondunn</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="2389322204">
+  <data key="d0">2</data>
+  <data key="d1">CecilBrockman</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="78387677">
+  <data key="d0">1</data>
+  <data key="d1">RandyHultgren</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="167438813">
+  <data key="d0">2</data>
+  <data key="d1">burtrsolomons</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="250710495">
+  <data key="d0">1</data>
+  <data key="d1">RepTimJohnson</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="138523104">
+  <data key="d0">1</data>
+  <data key="d1">schanzerdavid</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="448510429">
+  <data key="d0">1</data>
+  <data key="d1">DennisPCrawford</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="2894733795">
+  <data key="d0">2</data>
+  <data key="d1">SenMarklein</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="1262275046">
+  <data key="d0">2</data>
+  <data key="d1">RepJerryHertaus</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="457597418">
+  <data key="d0">2</data>
+  <data key="d1">FortMillRaye</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="2272031215">
+  <data key="d0">2</data>
+  <data key="d1">BryanSpencer25</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="19749363">
+  <data key="d0">1</data>
+  <data key="d1">awaldeck</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="45787636">
+  <data key="d0">1</data>
+  <data key="d1">vote4murphy</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="19137014">
+  <data key="d0">1</data>
+  <data key="d1">MatthewJCochran</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="599503354">
+  <data key="d0">1</data>
+  <data key="d1">PelosiPress</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="236696059">
+  <data key="d0">1</data>
+  <data key="d1">AuditorSchweich</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="2432952828">
+  <data key="d0">1</data>
+  <data key="d1">GrothmanforWI</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="2884463110">
+  <data key="d0">1</data>
+  <data key="d1">emramir10</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="126011912">
+  <data key="d0">1</data>
+  <data key="d1">KeepLarryClark</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="34939401">
+  <data key="d0">1</data>
+  <data key="d1">bobonword</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="69065230">
+  <data key="d0">1</data>
+  <data key="d1">21stWard</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="304654862">
+  <data key="d0">1</data>
+  <data key="d1">PaSDCC</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="2225660432">
+  <data key="d0">1</data>
+  <data key="d1">pivit</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="14295569">
+  <data key="d0">1</data>
+  <data key="d1">robmacomber</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="9554452">
+  <data key="d0">1</data>
+  <data key="d1">markwinburn</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="127635993">
+  <data key="d0">2</data>
+  <data key="d1">cherokeegop</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="525957664">
+  <data key="d0">1</data>
+  <data key="d1">TerryRice6</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="16175650">
+  <data key="d0">2</data>
+  <data key="d1">joelsilberman</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="17388080">
+  <data key="d0">2</data>
+  <data key="d1">stlyrs</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="14606900">
+  <data key="d0">1</data>
+  <data key="d1">BadgerBlogger</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="48001589">
+  <data key="d0">1</data>
+  <data key="d1">Joe_Abbey</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="101655098">
+  <data key="d0">1</data>
+  <data key="d1">TeaPartyYouth</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="611805760">
+  <data key="d0">1</data>
+  <data key="d1">CindyR4NH</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="83935810">
+  <data key="d0">1</data>
+  <data key="d1">RepSydneyCarlin</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="306414147">
+  <data key="d0">1</data>
+  <data key="d1">resetdoc</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="242965065">
+  <data key="d0">1</data>
+  <data key="d1">Edvigil1</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="1414537802">
+  <data key="d0">2</data>
+  <data key="d1">MORepSommer</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="1164782162">
+  <data key="d0">1</data>
+  <data key="d1">RepRobertRoss</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="539325012">
+  <data key="d0">2</data>
+  <data key="d1">AuthorAnnBaker</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="309432919">
+  <data key="d0">1</data>
+  <data key="d1">DebraHeffernan</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="704250462">
+  <data key="d0">2</data>
+  <data key="d1">patriotbarr</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="36842079">
+  <data key="d0">1</data>
+  <data key="d1">RickSantorumUSA</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="612862560">
+  <data key="d0">1</data>
+  <data key="d1">kamaufranklin</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="89299553">
+  <data key="d0">1</data>
+  <data key="d1">ChrisANicholson</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="1491350114">
+  <data key="d0">1</data>
+  <data key="d1">MooneyforWV</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="34615909">
+  <data key="d0">1</data>
+  <data key="d1">WaProgressives</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="310035051">
+  <data key="d0">1</data>
+  <data key="d1">DennehyGOP</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="254648944">
+  <data key="d0">1</data>
+  <data key="d1">imwithmary</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="1101965940">
+  <data key="d0">1</data>
+  <data key="d1">JohnTateVA</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="60353143">
+  <data key="d0">1</data>
+  <data key="d1">billmonning</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="293274246">
+  <data key="d0">1</data>
+  <data key="d1">PsalmPastor</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="62952071">
+  <data key="d0">1</data>
+  <data key="d1">PSUCollegeDems</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="553863817">
+  <data key="d0">1</data>
+  <data key="d1">ScottPetersCA52</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="102054537">
+  <data key="d0">1</data>
+  <data key="d1">KosciuskoCOC</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="506858125">
+  <data key="d0">1</data>
+  <data key="d1">Cbroadh2o</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="1966062223">
+  <data key="d0">2</data>
+  <data key="d1">MollyWhiteTX</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="18434704">
+  <data key="d0">1</data>
+  <data key="d1">taycain</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="274164368">
+  <data key="d0">1</data>
+  <data key="d1">TedYoho</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="2914822804">
+  <data key="d0">1</data>
+  <data key="d1">SilverSummerSun</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="1225888412">
+  <data key="d0">2</data>
+  <data key="d1">repsteveriggs</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="262668957">
+  <data key="d0">1</data>
+  <data key="d1">LaurelMayor</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="2343686814">
+  <data key="d0">1</data>
+  <data key="d1">tmac4congress</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="112781983">
+  <data key="d0">1</data>
+  <data key="d1">coffmanforco</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="591964833">
+  <data key="d0">1</data>
+  <data key="d1">JohnnyHeldt</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="449458857">
+  <data key="d0">1</data>
+  <data key="d1">EdHanes4NC</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="744204973">
+  <data key="d0">2</data>
+  <data key="d1">Bragg4StateRep</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="306080433">
+  <data key="d0">2</data>
+  <data key="d1">RyanWeld</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="418882229">
+  <data key="d0">1</data>
+  <data key="d1">PriscillaTyson</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="69546677">
+  <data key="d0">1</data>
+  <data key="d1">HuelgaGeneral</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="45202110">
+  <data key="d0">1</data>
+  <data key="d1">MayorNewberry</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="347450046">
+  <data key="d0">1</data>
+  <data key="d1">RepSusanHolmes</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="36731590">
+  <data key="d0">1</data>
+  <data key="d1">moosebriller</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="16913094">
+  <data key="d0">1</data>
+  <data key="d1">JerryTMiller</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="493830863">
+  <data key="d0">1</data>
+  <data key="d1">Shelli4Indiana</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="2533374678">
+  <data key="d0">1</data>
+  <data key="d1">PeggyABennett</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="115792599">
+  <data key="d0">2</data>
+  <data key="d1">CindyKirchhofer</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="1532498652">
+  <data key="d0">2</data>
+  <data key="d1">JGPretlow</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="292944606">
+  <data key="d0">1</data>
+  <data key="d1">RickWardLA</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="500040415">
+  <data key="d0">2</data>
+  <data key="d1">SenatorDixon</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="210318051">
+  <data key="d0">1</data>
+  <data key="d1">CJayMahoney</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="19102436">
+  <data key="d0">1</data>
+  <data key="d1">SSteckman</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="156056293">
+  <data key="d0">1</data>
+  <data key="d1">BernardCParks</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="215905007">
+  <data key="d0">1</data>
+  <data key="d1">unwomenbih</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="2329092852">
+  <data key="d0">1</data>
+  <data key="d1">RepNickRahall</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="2361103093">
+  <data key="d0">2</data>
+  <data key="d1">JChipmanMO120th</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="250272501">
+  <data key="d0">1</data>
+  <data key="d1">CresentHardy</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="20949758">
+  <data key="d0">1</data>
+  <data key="d1">macnyc</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="50088703">
+  <data key="d0">2</data>
+  <data key="d1">sacdems</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="368497409">
+  <data key="d0">1</data>
+  <data key="d1">ProfHagle</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="101825287">
+  <data key="d0">1</data>
+  <data key="d1">dc_us</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="1182925578">
+  <data key="d0">1</data>
+  <data key="d1">KYTommyThompson</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="221422356">
+  <data key="d0">1</data>
+  <data key="d1">KTTexas</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="212800280">
+  <data key="d0">1</data>
+  <data key="d1">shelleykeeney</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="546753317">
+  <data key="d0">1</data>
+  <data key="d1">LWMcV</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="309844773">
+  <data key="d0">1</data>
+  <data key="d1">RepMarcGergely</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="49228583">
+  <data key="d0">2</data>
+  <data key="d1">GeorgiaTRs</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="154139430">
+  <data key="d0">1</data>
+  <data key="d1">MarkJohns_135th</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="132291374">
+  <data key="d0">1</data>
+  <data key="d1">FreedomPub</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="331690801">
+  <data key="d0">1</data>
+  <data key="d1">PWCGOP</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="304296756">
+  <data key="d0">1</data>
+  <data key="d1">ShackGeneral</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="552065851">
+  <data key="d0">2</data>
+  <data key="d1">WallingfordMO</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="22260540">
+  <data key="d0">1</data>
+  <data key="d1">Kbeckner</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="417631044">
+  <data key="d0">1</data>
+  <data key="d1">JonSeaton18</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="134851396">
+  <data key="d0">1</data>
+  <data key="d1">ManchesterDems</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="424409927">
+  <data key="d0">1</data>
+  <data key="d1">GeorgeTMcDonald</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="28328776">
+  <data key="d0">2</data>
+  <data key="d1">KelleyLinck</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="605754185">
+  <data key="d0">2</data>
+  <data key="d1">Koenig4MO</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="325231436">
+  <data key="d0">1</data>
+  <data key="d1">TomUdallPress</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="2915812174">
+  <data key="d0">1</data>
+  <data key="d1">RepAmy31</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="36086607">
+  <data key="d0">1</data>
+  <data key="d1">venglund</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="261325652">
+  <data key="d0">2</data>
+  <data key="d1">NickMilroy</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="1405987668">
+  <data key="d0">1</data>
+  <data key="d1">RepJimDeCesare</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="1425763159">
+  <data key="d0">1</data>
+  <data key="d1">JanaDellaRosa</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="268651352">
+  <data key="d0">1</data>
+  <data key="d1">Fedup_Mom</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="24314714">
+  <data key="d0">1</data>
+  <data key="d1">annieology</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="91552606">
+  <data key="d0">1</data>
+  <data key="d1">shah_bhoomi</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="41726817">
+  <data key="d0">1</data>
+  <data key="d1">partiallypro</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="15688547">
+  <data key="d0">1</data>
+  <data key="d1">geneajohnsonjr</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="57412452">
+  <data key="d0">1</data>
+  <data key="d1">MetroRichmondYD</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="30290791">
+  <data key="d0">1</data>
+  <data key="d1">VanRJohnson</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="37137258">
+  <data key="d0">2</data>
+  <data key="d1">chrisedwardsOR</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="133782380">
+  <data key="d0">1</data>
+  <data key="d1">terrijaustin</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="1193393012">
+  <data key="d0">1</data>
+  <data key="d1">StefanRingel</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="1198443385">
+  <data key="d0">1</data>
+  <data key="d1">EdMurray4Mayor</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="17298298">
+  <data key="d0">1</data>
+  <data key="d1">saltythetrain</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="100674437">
+  <data key="d0">1</data>
+  <data key="d1">RepWesco</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="2809129864">
+  <data key="d0">1</data>
+  <data key="d1">Jsutt20</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="17841033">
+  <data key="d0">1</data>
+  <data key="d1">RonMaag</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="16669580">
+  <data key="d0">1</data>
+  <data key="d1">Atheria</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="285662097">
+  <data key="d0">1</data>
+  <data key="d1">WineChics</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="39871383">
+  <data key="d0">1</data>
+  <data key="d1">OUCollegeDems</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="371501976">
+  <data key="d0">2</data>
+  <data key="d1">Matt_Calabria</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="193065887">
+  <data key="d0">1</data>
+  <data key="d1">Generation_Life</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="115676070">
+  <data key="d0">1</data>
+  <data key="d1">collinpeterson</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="383374250">
+  <data key="d0">1</data>
+  <data key="d1">hillsdems</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="114207661">
+  <data key="d0">2</data>
+  <data key="d1">sweak1</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="1596148664">
+  <data key="d0">2</data>
+  <data key="d1">DougForTexas</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="23753656">
+  <data key="d0">1</data>
+  <data key="d1">prperkins</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="382079930">
+  <data key="d0">1</data>
+  <data key="d1">SusanBStimpson</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="97803194">
+  <data key="d0">1</data>
+  <data key="d1">chipcravaack</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="26244031">
+  <data key="d0">1</data>
+  <data key="d1">frankcaprio</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="2281331647">
+  <data key="d0">1</data>
+  <data key="d1">iniminimineyMO</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="765197252">
+  <data key="d0">1</data>
+  <data key="d1">ForrestDunbarAK</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="1188207558">
+  <data key="d0">1</data>
+  <data key="d1">webriser</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="1328212934">
+  <data key="d0">1</data>
+  <data key="d1">CMDarleneMealy</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="7205832">
+  <data key="d0">1</data>
+  <data key="d1">austinrathe</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="985420748">
+  <data key="d0">2</data>
+  <data key="d1">nancytodd28</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="575398878">
+  <data key="d0">2</data>
+  <data key="d1">RepMackenzie</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="32134117">
+  <data key="d0">1</data>
+  <data key="d1">pianistoksana</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="62933995">
+  <data key="d0">1</data>
+  <data key="d1">OhioLiberty</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="71453676">
+  <data key="d0">1</data>
+  <data key="d1">SFGOP</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="1873081328">
+  <data key="d0">1</data>
+  <data key="d1">MonicaForOregon</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="1089418225">
+  <data key="d0">1</data>
+  <data key="d1">the_RLGA</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="2340948996">
+  <data key="d0">1</data>
+  <data key="d1">DonNorcross4NJ</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="38351876">
+  <data key="d0">1</data>
+  <data key="d1">WRPitt</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="114000905">
+  <data key="d0">1</data>
+  <data key="d1">TomHollandKS</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="283063309">
+  <data key="d0">1</data>
+  <data key="d1">jeanpetersbaker</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="1609374734">
+  <data key="d0">1</data>
+  <data key="d1">Dwarfclone</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="2905351184">
+  <data key="d0">1</data>
+  <data key="d1">willmetcalfTX</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="221637650">
+  <data key="d0">1</data>
+  <data key="d1">YoProWI</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="22873107">
+  <data key="d0">1</data>
+  <data key="d1">RonRyckman</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="33981467">
+  <data key="d0">1</data>
+  <data key="d1">FarylUry</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="432763933">
+  <data key="d0">1</data>
+  <data key="d1">SenatorJohnPolk</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="836854820">
+  <data key="d0">1</data>
+  <data key="d1">MicahGravley</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="305144869">
+  <data key="d0">1</data>
+  <data key="d1">CAPSecurity</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="120355879">
+  <data key="d0">1</data>
+  <data key="d1">mediachristian4</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="952540201">
+  <data key="d0">1</data>
+  <data key="d1">DeGette5280</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="311714873">
+  <data key="d0">1</data>
+  <data key="d1">repwilliams</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="250328124">
+  <data key="d0">1</data>
+  <data key="d1">SenHayes</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="1428948032">
+  <data key="d0">1</data>
+  <data key="d1">repckelly</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="431100994">
+  <data key="d0">1</data>
+  <data key="d1">HHSRegion9</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="247968838">
+  <data key="d0">1</data>
+  <data key="d1">MaryHartmanx2</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="10105942">
+  <data key="d0">2</data>
+  <data key="d1">NewYorkSun</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="124816474">
+  <data key="d0">1</data>
+  <data key="d1">byeagle37</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="22729819">
+  <data key="d0">1</data>
+  <data key="d1">CiaraImani</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="556223581">
+  <data key="d0">1</data>
+  <data key="d1">LOLbirthers</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="14380130">
+  <data key="d0">1</data>
+  <data key="d1">solv17</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="40606819">
+  <data key="d0">1</data>
+  <data key="d1">UConnCRs</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="305202284">
+  <data key="d0">2</data>
+  <data key="d1">SenatorWinters</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="183424110">
+  <data key="d0">1</data>
+  <data key="d1">IsaiahCardona</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="1340232817">
+  <data key="d0">2</data>
+  <data key="d1">RepJillBillings</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="389624946">
+  <data key="d0">1</data>
+  <data key="d1">SenatorWitkos</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="1976740980">
+  <data key="d0">1</data>
+  <data key="d1">TheldaWilliams1</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="199742582">
+  <data key="d0">1</data>
+  <data key="d1">marvhagedorn</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="492778623">
+  <data key="d0">1</data>
+  <data key="d1">DSorensenME</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="14273675">
+  <data key="d0">1</data>
+  <data key="d1">crystalstrait</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="326239371">
+  <data key="d0">1</data>
+  <data key="d1">PhilAngelides</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="1582128271">
+  <data key="d0">1</data>
+  <data key="d1">UConnDems</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="87542929">
+  <data key="d0">1</data>
+  <data key="d1">SenHodge</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="346389650">
+  <data key="d0">1</data>
+  <data key="d1">MayorJohnLee</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="381736092">
+  <data key="d0">1</data>
+  <data key="d1">USRepBobTurner</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="2425738400">
+  <data key="d0">2</data>
+  <data key="d1">JeremyGillamAR</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="292394146">
+  <data key="d0">1</data>
+  <data key="d1">monda66</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="64859300">
+  <data key="d0">1</data>
+  <data key="d1">AFloridaPromise</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="233784484">
+  <data key="d0">1</data>
+  <data key="d1">Ald_Reboyras</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="52845734">
+  <data key="d0">1</data>
+  <data key="d1">ITRwatchdog</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="71644329">
+  <data key="d0">2</data>
+  <data key="d1">TuftsDemocrats</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="393481389">
+  <data key="d0">1</data>
+  <data key="d1">margueritequinn</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="502219956">
+  <data key="d0">1</data>
+  <data key="d1">Josh_Miller66</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="24966325">
+  <data key="d0">1</data>
+  <data key="d1">repward</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="485172405">
+  <data key="d0">2</data>
+  <data key="d1">SenDelgado</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="2327983291">
+  <data key="d0">2</data>
+  <data key="d1">Erin_Houchin</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="118420668">
+  <data key="d0">1</data>
+  <data key="d1">Socialism4USA</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="59870399">
+  <data key="d0">1</data>
+  <data key="d1">bendthearc_sca</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="29639874">
+  <data key="d0">1</data>
+  <data key="d1">TORARADICAL</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="20778179">
+  <data key="d0">1</data>
+  <data key="d1">prorev</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="17855686">
+  <data key="d0">1</data>
+  <data key="d1">MattOczkowski</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="16440518">
+  <data key="d0">1</data>
+  <data key="d1">bobney</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="76035270">
+  <data key="d0">1</data>
+  <data key="d1">JohnFMcKeon</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="336075979">
+  <data key="d0">2</data>
+  <data key="d1">timmiller_mn</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="14413010">
+  <data key="d0">1</data>
+  <data key="d1">bobbeers</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="141300951">
+  <data key="d0">1</data>
+  <data key="d1">SenStanislawski</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="1397144792">
+  <data key="d0">1</data>
+  <data key="d1">SenatorPierce</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="592899289">
+  <data key="d0">1</data>
+  <data key="d1">MarkCAlexander</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="49157340">
+  <data key="d0">1</data>
+  <data key="d1">rogersanna</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="16088285">
+  <data key="d0">1</data>
+  <data key="d1">degop</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="116448482">
+  <data key="d0">1</data>
+  <data key="d1">lgbtdemsofva</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="40713445">
+  <data key="d0">1</data>
+  <data key="d1">JillMartinRiche</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="45618406">
+  <data key="d0">1</data>
+  <data key="d1">LuanneIPC</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="57142505">
+  <data key="d0">1</data>
+  <data key="d1">OtterforIdaho</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="3594949872">
+  <data key="d0">1</data>
+  <data key="d1">e_monsendo</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="2961290481">
+  <data key="d0">1</data>
+  <data key="d1">DaveBakerMN</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="419871985">
+  <data key="d0">1</data>
+  <data key="d1">LavoroWelfare</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="23721204">
+  <data key="d0">1</data>
+  <data key="d1">SeattleGOP</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="49614068">
+  <data key="d0">1</data>
+  <data key="d1">callum_morton</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="20890869">
+  <data key="d0">1</data>
+  <data key="d1">Cindy_Sheehan</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="2225736954">
+  <data key="d0">2</data>
+  <data key="d1">DeanSchamore</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="175400197">
+  <data key="d0">2</data>
+  <data key="d1">grg87</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="22693132">
+  <data key="d0">1</data>
+  <data key="d1">theheatherbrown</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="121783565">
+  <data key="d0">1</data>
+  <data key="d1">tobystavisky</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="30252303">
+  <data key="d0">1</data>
+  <data key="d1">MarkDeSaulnier</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="236975376">
+  <data key="d0">1</data>
+  <data key="d1">DalrympleforGov</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="25447696">
+  <data key="d0">2</data>
+  <data key="d1">YDMO</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="334079251">
+  <data key="d0">1</data>
+  <data key="d1">RepSueHelm</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="32281887">
+  <data key="d0">1</data>
+  <data key="d1">pizzapolitico</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="2252774689">
+  <data key="d0">1</data>
+  <data key="d1">KYJoeBowen</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="63563043">
+  <data key="d0">1</data>
+  <data key="d1">Barton4Az</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="40959268">
+  <data key="d0">1</data>
+  <data key="d1">AllanMansoor</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="72770853">
+  <data key="d0">1</data>
+  <data key="d1">CollegeDemsNY</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="29365544">
+  <data key="d0">1</data>
+  <data key="d1">Brookelorren</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="35657008">
+  <data key="d0">1</data>
+  <data key="d1">MonYoungblood</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="58842416">
+  <data key="d0">1</data>
+  <data key="d1">RodBlum</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="75150645">
+  <data key="d0">1</data>
+  <data key="d1">tuckerbounds</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="231126326">
+  <data key="d0">2</data>
+  <data key="d1">RepNealGoodman</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="23332153">
+  <data key="d0">1</data>
+  <data key="d1">lunchmoneymusic</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="22134083">
+  <data key="d0">1</data>
+  <data key="d1">Pazuzu_hsp</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="22703429">
+  <data key="d0">1</data>
+  <data key="d1">reptryon</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="484234573">
+  <data key="d0">2</data>
+  <data key="d1">ValenciaStovall</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="28779853">
+  <data key="d0">1</data>
+  <data key="d1">ellis_texas</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="525282645">
+  <data key="d0">1</data>
+  <data key="d1">DocRenuart</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="361956693">
+  <data key="d0">1</data>
+  <data key="d1">RepSondy</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="14632277">
+  <data key="d0">1</data>
+  <data key="d1">pashdown</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="24427864">
+  <data key="d0">1</data>
+  <data key="d1">Docjp</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="3010221402">
+  <data key="d0">2</data>
+  <data key="d1">RepJimKeffer</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="16797022">
+  <data key="d0">1</data>
+  <data key="d1">3liz</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="231118175">
+  <data key="d0">2</data>
+  <data key="d1">RepVanessaBrown</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="80956768">
+  <data key="d0">1</data>
+  <data key="d1">DrLarryBucshon</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="28374369">
+  <data key="d0">1</data>
+  <data key="d1">Occidentaljihad</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="168920419">
+  <data key="d0">1</data>
+  <data key="d1">fcydems</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="287690091">
+  <data key="d0">1</data>
+  <data key="d1">JohnHQuigley</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="240303484">
+  <data key="d0">1</data>
+  <data key="d1">GwinnettDems</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="18234755">
+  <data key="d0">1</data>
+  <data key="d1">EdGarnerAR</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="2967119237">
+  <data key="d0">1</data>
+  <data key="d1">PDyster</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="19160457">
+  <data key="d0">1</data>
+  <data key="d1">RollaSelbak</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="15388042">
+  <data key="d0">2</data>
+  <data key="d1">evanjenne</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="136383882">
+  <data key="d0">1</data>
+  <data key="d1">waltrogersforIA</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="819676560">
+  <data key="d0">2</data>
+  <data key="d1">rep_fitzh20</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="2147825040">
+  <data key="d0">2</data>
+  <data key="d1">VoteJW</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="44430741">
+  <data key="d0">1</data>
+  <data key="d1">uayd</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="129791388">
+  <data key="d0">2</data>
+  <data key="d1">sandymurman</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="2279206304">
+  <data key="d0">1</data>
+  <data key="d1">DrDavidAlameel</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="1673381282">
+  <data key="d0">1</data>
+  <data key="d1">CTDemsChair</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="1303141801">
+  <data key="d0">1</data>
+  <data key="d1">Olivek10</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="564166062">
+  <data key="d0">2</data>
+  <data key="d1">KefalasJohn</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="437667247">
+  <data key="d0">1</data>
+  <data key="d1">NateGentryNM</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="123880887">
+  <data key="d0">1</data>
+  <data key="d1">BuckheadYR</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="20891065">
+  <data key="d0">1</data>
+  <data key="d1">Nefer_L</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="229596604">
+  <data key="d0">1</data>
+  <data key="d1">DAKDIS</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="1713114559">
+  <data key="d0">2</data>
+  <data key="d1">GaryVanDeaver</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="1117015490">
+  <data key="d0">1</data>
+  <data key="d1">Cecilia_Tkaczyk</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="540265927">
+  <data key="d0">1</data>
+  <data key="d1">MichelleSchimel</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="74825169">
+  <data key="d0">1</data>
+  <data key="d1">GOPArkansas</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="2983245271">
+  <data key="d0">2</data>
+  <data key="d1">TXHD10</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="29271512">
+  <data key="d0">1</data>
+  <data key="d1">FutureMajority</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="41483740">
+  <data key="d0">1</data>
+  <data key="d1">CheriJahn</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="48528862">
+  <data key="d0">1</data>
+  <data key="d1">RepClaireLevy</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="72848874">
+  <data key="d0">1</data>
+  <data key="d1">MuslimAgorist</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="2410032619">
+  <data key="d0">1</data>
+  <data key="d1">RepOtondo</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="580406765">
+  <data key="d0">1</data>
+  <data key="d1">scottdprice</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="15861230">
+  <data key="d0">1</data>
+  <data key="d1">WalaaIdris</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="129443311">
+  <data key="d0">1</data>
+  <data key="d1">RandomExcess</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="2205187568">
+  <data key="d0">2</data>
+  <data key="d1">RepJessie</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="109440495">
+  <data key="d0">1</data>
+  <data key="d1">iamkohan</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="24528365">
+  <data key="d0">1</data>
+  <data key="d1">Mom_with2boys</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="447247863">
+  <data key="d0">1</data>
+  <data key="d1">Vanwanggaard</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="160329209">
+  <data key="d0">1</data>
+  <data key="d1">AnneHGonzales</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="107589114">
+  <data key="d0">1</data>
+  <data key="d1">ChelsaWagner</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="125840893">
+  <data key="d0">2</data>
+  <data key="d1">BethAnneRankin</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="67501566">
+  <data key="d0">1</data>
+  <data key="d1">AmherstGOP</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="26420738">
+  <data key="d0">2</data>
+  <data key="d1">GeorgetownCR</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="22801923">
+  <data key="d0">1</data>
+  <data key="d1">POStqia</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="7106052">
+  <data key="d0">1</data>
+  <data key="d1">deltafoxtrot</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="328961541">
+  <data key="d0">2</data>
+  <data key="d1">CobbYRs</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="486923779">
+  <data key="d0">1</data>
+  <data key="d1">MichaelKansas</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="116264455">
+  <data key="d0">1</data>
+  <data key="d1">EllenRAnderson</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="2326195717">
+  <data key="d0">1</data>
+  <data key="d1">C7CorvetteZ06</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="198895121">
+  <data key="d0">1</data>
+  <data key="d1">gabecrawford</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="17266198">
+  <data key="d0">2</data>
+  <data key="d1">WashoeDEMS</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="42790427">
+  <data key="d0">1</data>
+  <data key="d1">AlexWanforATL</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="19144225">
+  <data key="d0">1</data>
+  <data key="d1">peaceandfreedom</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="326581793">
+  <data key="d0">1</data>
+  <data key="d1">JamieJohnsonUSA</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="459050534">
+  <data key="d0">1</data>
+  <data key="d1">FbianNunez</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="63073834">
+  <data key="d0">1</data>
+  <data key="d1">TomReedCongress</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="569026093">
+  <data key="d0">1</data>
+  <data key="d1">RandyHuntCPA</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="47543853">
+  <data key="d0">1</data>
+  <data key="d1">alexandermclark</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="37385776">
+  <data key="d0">2</data>
+  <data key="d1">caldems</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="2883118643">
+  <data key="d0">1</data>
+  <data key="d1">LepantoInst</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="113120838">
+  <data key="d0">1</data>
+  <data key="d1">DJordanLane</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="357684818">
+  <data key="d0">2</data>
+  <data key="d1">Kristin_Jacobs</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="492607071">
+  <data key="d0">1</data>
+  <data key="d1">BKelile</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="454233704">
+  <data key="d0">2</data>
+  <data key="d1">GrayForAssembly</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="2511427183">
+  <data key="d0">1</data>
+  <data key="d1">dznussbaum</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="39140979">
+  <data key="d0">1</data>
+  <data key="d1">Roger247</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="16051828">
+  <data key="d0">2</data>
+  <data key="d1">MattFilipowicz</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="282629749">
+  <data key="d0">1</data>
+  <data key="d1">SistercareSC</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="310015608">
+  <data key="d0">1</data>
+  <data key="d1">RepAlbritton</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="59321980">
+  <data key="d0">2</data>
+  <data key="d1">MarquetteCRs</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="346801789">
+  <data key="d0">1</data>
+  <data key="d1">RHamilton542</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="357049990">
+  <data key="d0">1</data>
+  <data key="d1">valenciaseay</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="222144134">
+  <data key="d0">2</data>
+  <data key="d1">RepSimmons</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="64462470">
+  <data key="d0">1</data>
+  <data key="d1">fightbacknews</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="25343626">
+  <data key="d0">1</data>
+  <data key="d1">PittCollegeDems</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="76150411">
+  <data key="d0">1</data>
+  <data key="d1">NRMCGOP</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="57413259">
+  <data key="d0">1</data>
+  <data key="d1">rtemplin</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="624019090">
+  <data key="d0">1</data>
+  <data key="d1">Austerity_Sucks</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="39095957">
+  <data key="d0">1</data>
+  <data key="d1">tpctweet</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="114749081">
+  <data key="d0">1</data>
+  <data key="d1">TeamTiberi</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="293594786">
+  <data key="d0">1</data>
+  <data key="d1">GingrichProds</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="17903266">
+  <data key="d0">1</data>
+  <data key="d1">DavidStrom</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="488019620">
+  <data key="d0">1</data>
+  <data key="d1">JessEhrlich</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="259176107">
+  <data key="d0">1</data>
+  <data key="d1">OberlinDems</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="515010219">
+  <data key="d0">1</data>
+  <data key="d1">SheriffLew</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="323593901">
+  <data key="d0">1</data>
+  <data key="d1">AttyPeteSchulte</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="363140780">
+  <data key="d0">1</data>
+  <data key="d1">C_Arlinghaus</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="444464812">
+  <data key="d0">1</data>
+  <data key="d1">KingForTexas</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="24149681">
+  <data key="d0">1</data>
+  <data key="d1">marlowcolvin</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="946532017">
+  <data key="d0">1</data>
+  <data key="d1">reptallon</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="22011571">
+  <data key="d0">1</data>
+  <data key="d1">JessLevin</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="50962105">
+  <data key="d0">2</data>
+  <data key="d1">eddiejoe4senate</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="3107499705">
+  <data key="d0">1</data>
+  <data key="d1">SteveWestKY</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="15949499">
+  <data key="d0">1</data>
+  <data key="d1">QuigleyCampaign</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="349634236">
+  <data key="d0">1</data>
+  <data key="d1">PatrickLaneWV</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="30066364">
+  <data key="d0">1</data>
+  <data key="d1">MayorTomBates</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="1357819586">
+  <data key="d0">1</data>
+  <data key="d1">suedavis1974</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="16064195">
+  <data key="d0">1</data>
+  <data key="d1">BenBHorsley</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="398446281">
+  <data key="d0">1</data>
+  <data key="d1">andy_eisen</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="142137035">
+  <data key="d0">1</data>
+  <data key="d1">AJM9588</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="29204185">
+  <data key="d0">1</data>
+  <data key="d1">pennysgrand</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="435467995">
+  <data key="d0">1</data>
+  <data key="d1">DeanDohrman</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="474091228">
+  <data key="d0">1</data>
+  <data key="d1">ellington_b</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="90357471">
+  <data key="d0">1</data>
+  <data key="d1">susanguidry</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="109725408">
+  <data key="d0">2</data>
+  <data key="d1">KevinLembo</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="2901477089">
+  <data key="d0">2</data>
+  <data key="d1">SenatorStefano</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="76508902">
+  <data key="d0">1</data>
+  <data key="d1">marshalltowntr</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="109340395">
+  <data key="d0">1</data>
+  <data key="d1">CurtOnMessage</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="488052474">
+  <data key="d0">2</data>
+  <data key="d1">markassini</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="574019323">
+  <data key="d0">1</data>
+  <data key="d1">JoseCeballosFL</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="976502527">
+  <data key="d0">1</data>
+  <data key="d1">RepFarina</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="342181634">
+  <data key="d0">1</data>
+  <data key="d1">ClarkYoungDems</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="2251020037">
+  <data key="d0">1</data>
+  <data key="d1">EdGaunchWV</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="121751302">
+  <data key="d0">1</data>
+  <data key="d1">JaxYRs</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="34152206">
+  <data key="d0">2</data>
+  <data key="d1">RNHCKS</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="325857039">
+  <data key="d0">1</data>
+  <data key="d1">TomPauken</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="35448592">
+  <data key="d0">1</data>
+  <data key="d1">richcrandall</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="907144981">
+  <data key="d0">2</data>
+  <data key="d1">GeoffDuncanGA</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="414895897">
+  <data key="d0">1</data>
+  <data key="d1">jacktrammell</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="15970073">
+  <data key="d0">2</data>
+  <data key="d1">whome51obama</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="55815964">
+  <data key="d0">2</data>
+  <data key="d1">GwinnettGOP</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="115402745">
+  <data key="d0">1</data>
+  <data key="d1">Grimm4Congress</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="21235486">
+  <data key="d0">1</data>
+  <data key="d1">timsandersmn</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="256601887">
+  <data key="d0">1</data>
+  <data key="d1">notoserfdom</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="267018018">
+  <data key="d0">1</data>
+  <data key="d1">tylerhunter23</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="1651709731">
+  <data key="d0">1</data>
+  <data key="d1">YvonneLHolley</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="20870949">
+  <data key="d0">1</data>
+  <data key="d1">tommymstringer</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="280512296">
+  <data key="d0">1</data>
+  <data key="d1">tarasproduction</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="36464426">
+  <data key="d0">1</data>
+  <data key="d1">littlebigvoice</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="161339181">
+  <data key="d0">1</data>
+  <data key="d1">MDCjobs</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="394237742">
+  <data key="d0">1</data>
+  <data key="d1">LakewoodMayor</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="2163279666">
+  <data key="d0">1</data>
+  <data key="d1">voteforgarcia</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="273598262">
+  <data key="d0">1</data>
+  <data key="d1">LGraceSpencer</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="1846271804">
+  <data key="d0">1</data>
+  <data key="d1">RepDelozier</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="274120509">
+  <data key="d0">1</data>
+  <data key="d1">EdoftheNotch</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="2937218885">
+  <data key="d0">1</data>
+  <data key="d1">YGBCoalition</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="50521935">
+  <data key="d0">1</data>
+  <data key="d1">jpolesovsky</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="15771482">
+  <data key="d0">1</data>
+  <data key="d1">kevinholtsberry</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="294584158">
+  <data key="d0">1</data>
+  <data key="d1">KathleenGKane</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="254279527">
+  <data key="d0">1</data>
+  <data key="d1">repsalesquivel</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="37988209">
+  <data key="d0">1</data>
+  <data key="d1">J_Shack</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="26793841">
+  <data key="d0">1</data>
+  <data key="d1">rozpeterson</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="147935095">
+  <data key="d0">1</data>
+  <data key="d1">SallysList</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="247021432">
+  <data key="d0">1</data>
+  <data key="d1">drewcrompton</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="37947269">
+  <data key="d0">1</data>
+  <data key="d1">TempleDems</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="34367366">
+  <data key="d0">1</data>
+  <data key="d1">umarjones</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="50220935">
+  <data key="d0">1</data>
+  <data key="d1">emperorj</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="69373831">
+  <data key="d0">1</data>
+  <data key="d1">larevenue</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="54867849">
+  <data key="d0">2</data>
+  <data key="d1">dcraighorn</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="3367956359">
+  <data key="d0">1</data>
+  <data key="d1">IntersectionTNR</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="234899340">
+  <data key="d0">1</data>
+  <data key="d1">Lizro27</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="14374797">
+  <data key="d0">1</data>
+  <data key="d1">Packard_Sonic</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="48469903">
+  <data key="d0">1</data>
+  <data key="d1">herbmcmillan</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="480872337">
+  <data key="d0">1</data>
+  <data key="d1">Marcy_Kaptur</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="56987544">
+  <data key="d0">1</data>
+  <data key="d1">annlininger</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="120518554">
+  <data key="d0">1</data>
+  <data key="d1">DerekKilmer</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="432955294">
+  <data key="d0">1</data>
+  <data key="d1">collins_dc</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="175071135">
+  <data key="d0">2</data>
+  <data key="d1">Teamsters727</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="28878752">
+  <data key="d0">1</data>
+  <data key="d1">grandmahannah</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="1666604966">
+  <data key="d0">1</data>
+  <data key="d1">VA10thDemocrats</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="67227563">
+  <data key="d0">1</data>
+  <data key="d1">TexasGunTalk</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="219699117">
+  <data key="d0">1</data>
+  <data key="d1">CunninghamNCRep</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="282255277">
+  <data key="d0">2</data>
+  <data key="d1">Jay1043</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="36188083">
+  <data key="d0">1</data>
+  <data key="d1">LoudounGOP</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="2303688630">
+  <data key="d0">1</data>
+  <data key="d1">RepMikeColona</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="64726967">
+  <data key="d0">1</data>
+  <data key="d1">MayorAlexBlanco</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="48582584">
+  <data key="d0">1</data>
+  <data key="d1">DavissonforHD73</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="494329788">
+  <data key="d0">1</data>
+  <data key="d1">RepPaulTine</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="330657727">
+  <data key="d0">1</data>
+  <data key="d1">bexardems</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="242960321">
+  <data key="d0">1</data>
+  <data key="d1">notkateanne</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="484251592">
+  <data key="d0">1</data>
+  <data key="d1">ErinMolchany</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="39407561">
+  <data key="d0">1</data>
+  <data key="d1">goeffhansen</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="2928201676">
+  <data key="d0">2</data>
+  <data key="d1">RepGuzzardi39</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="23408593">
+  <data key="d0">1</data>
+  <data key="d1">Daniel_Malone</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="566949843">
+  <data key="d0">2</data>
+  <data key="d1">Fraker4Mo</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="2494724053">
+  <data key="d0">1</data>
+  <data key="d1">RichforRepLD29</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="127614941">
+  <data key="d0">1</data>
+  <data key="d1">JoeSamQueenNC</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="450146278">
+  <data key="d0">1</data>
+  <data key="d1">louismduke</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="72945644">
+  <data key="d0">1</data>
+  <data key="d1">BrownDems</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="250185710">
+  <data key="d0">2</data>
+  <data key="d1">SenLouiseLucas</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="263647215">
+  <data key="d0">1</data>
+  <data key="d1">carlinyoder</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<node id="394233849">
+  <data key="d0">1</data>
+  <data key="d1">Vpeluffo</data>
+  <data key="d2">DEMOCRAT</data>
+</node>
+<node id="39170043">
+  <data key="d0">1</data>
+  <data key="d1">ScottWalkerHQ</data>
+  <data key="d2">REPUBLICAN</data>
+</node>
+<edge source="55441424" target="25343626">
+  <data key="d3">1</data>
+</edge>
+<edge source="55441424" target="39871383">
+  <data key="d3">1</data>
+</edge>
+<edge source="55441424" target="25447696">
+  <data key="d3">2</data>
+</edge>
+<edge source="55441424" target="19372353">
+  <data key="d3">1</data>
+</edge>
+<edge source="259287056" target="1025077550">
+  <data key="d3">1</data>
+</edge>
+<edge source="259287056" target="3003867376">
+  <data key="d3">1</data>
+</edge>
+<edge source="259287056" target="231126326">
+  <data key="d3">1</data>
+</edge>
+<edge source="259287056" target="231118175">
+  <data key="d3">1</data>
+</edge>
+<edge source="259287056" target="309844773">
+  <data key="d3">1</data>
+</edge>
+<edge source="1112289313" target="904767654">
+  <data key="d3">1</data>
+</edge>
+<edge source="1112289313" target="1713114559">
+  <data key="d3">1</data>
+</edge>
+<edge source="165675063" target="437667247">
+  <data key="d3">1</data>
+</edge>
+<edge source="24430658" target="114207661">
+  <data key="d3">1</data>
+</edge>
+<edge source="24430658" target="2205187568">
+  <data key="d3">1</data>
+</edge>
+<edge source="24430658" target="2894733795">
+  <data key="d3">1</data>
+</edge>
+<edge source="24430658" target="2432952828">
+  <data key="d3">1</data>
+</edge>
+<edge source="24430658" target="447247863">
+  <data key="d3">1</data>
+</edge>
+<edge source="34768966" target="121751302">
+  <data key="d3">1</data>
+</edge>
+<edge source="716290129" target="18234755">
+  <data key="d3">1</data>
+</edge>
+<edge source="716290129" target="744204973">
+  <data key="d3">1</data>
+</edge>
+<edge source="716290129" target="525957664">
+  <data key="d3">1</data>
+</edge>
+<edge source="716290129" target="28328776">
+  <data key="d3">1</data>
+</edge>
+<edge source="716290129" target="311714873">
+  <data key="d3">1</data>
+</edge>
+<edge source="2900023413" target="20870949">
+  <data key="d3">1</data>
+</edge>
+<edge source="2900023413" target="946532017">
+  <data key="d3">1</data>
+</edge>
+<edge source="2900023413" target="457597418">
+  <data key="d3">1</data>
+</edge>
+<edge source="972898423" target="48528862">
+  <data key="d3">1</data>
+</edge>
+<edge source="972898423" target="41483740">
+  <data key="d3">1</data>
+</edge>
+<edge source="363143296" target="64859300">
+  <data key="d3">1</data>
+</edge>
+<edge source="363143296" target="525282645">
+  <data key="d3">1</data>
+</edge>
+<edge source="363143296" target="571978114">
+  <data key="d3">1</data>
+</edge>
+<edge source="523874457" target="564166062">
+  <data key="d3">1</data>
+</edge>
+<edge source="904767654" target="2983245271">
+  <data key="d3">1</data>
+</edge>
+<edge source="904767654" target="243677635">
+  <data key="d3">1</data>
+</edge>
+<edge source="904767654" target="1596148664">
+  <data key="d3">2</data>
+</edge>
+<edge source="904767654" target="3010221402">
+  <data key="d3">1</data>
+</edge>
+<edge source="904767654" target="1713114559">
+  <data key="d3">1</data>
+</edge>
+<edge source="487813295" target="1425763159">
+  <data key="d3">1</data>
+</edge>
+<edge source="487813295" target="18234755">
+  <data key="d3">1</data>
+</edge>
+<edge source="487813295" target="50962105">
+  <data key="d3">1</data>
+</edge>
+<edge source="22425776" target="2361103093">
+  <data key="d3">1</data>
+</edge>
+<edge source="22425776" target="2147825040">
+  <data key="d3">1</data>
+</edge>
+<edge source="22425776" target="1414537802">
+  <data key="d3">1</data>
+</edge>
+<edge source="22425776" target="2272031215">
+  <data key="d3">1</data>
+</edge>
+<edge source="22425776" target="605754185">
+  <data key="d3">1</data>
+</edge>
+<edge source="22425776" target="100583605">
+  <data key="d3">1</data>
+</edge>
+<edge source="22425776" target="500040415">
+  <data key="d3">1</data>
+</edge>
+<edge source="22425776" target="566949843">
+  <data key="d3">1</data>
+</edge>
+<edge source="100583605" target="566949843">
+  <data key="d3">1</data>
+</edge>
+<edge source="100583605" target="435467995">
+  <data key="d3">1</data>
+</edge>
+<edge source="100583605" target="283063309">
+  <data key="d3">1</data>
+</edge>
+<edge source="100583605" target="1414537802">
+  <data key="d3">1</data>
+</edge>
+<edge source="100583605" target="552065851">
+  <data key="d3">1</data>
+</edge>
+<edge source="100583605" target="36086607">
+  <data key="d3">1</data>
+</edge>
+<edge source="18931904" target="58842416">
+  <data key="d3">1</data>
+</edge>
+<edge source="69357767" target="115792599">
+  <data key="d3">1</data>
+</edge>
+<edge source="2962274537" target="540265927">
+  <data key="d3">1</data>
+</edge>
+<edge source="2962274537" target="1532498652">
+  <data key="d3">1</data>
+</edge>
+<edge source="2962274537" target="72770853">
+  <data key="d3">1</data>
+</edge>
+<edge source="317309166" target="76035270">
+  <data key="d3">1</data>
+</edge>
+<edge source="3003867376" target="2927384962">
+  <data key="d3">1</data>
+</edge>
+<edge source="3003867376" target="2901477089">
+  <data key="d3">2</data>
+</edge>
+<edge source="3003867376" target="309844773">
+  <data key="d3">1</data>
+</edge>
+<edge source="3003867376" target="231126326">
+  <data key="d3">1</data>
+</edge>
+<edge source="248234228" target="273598262">
+  <data key="d3">2</data>
+</edge>
+<edge source="27973899" target="1249800524">
+  <data key="d3">1</data>
+</edge>
+<edge source="27973899" target="233784484">
+  <data key="d3">1</data>
+</edge>
+<edge source="27973899" target="22703429">
+  <data key="d3">1</data>
+</edge>
+<edge source="2978992402" target="114207661">
+  <data key="d3">1</data>
+</edge>
+<edge source="20959509" target="71644329">
+  <data key="d3">1</data>
+</edge>
+<edge source="469610782" target="160329209">
+  <data key="d3">1</data>
+</edge>
+<edge source="1375306027" target="282255277">
+  <data key="d3">1</data>
+</edge>
+<edge source="1375306027" target="611805760">
+  <data key="d3">1</data>
+</edge>
+<edge source="1025077550" target="231126326">
+  <data key="d3">1</data>
+</edge>
+<edge source="19372353" target="37385776">
+  <data key="d3">1</data>
+</edge>
+<edge source="1249800524" target="426809736">
+  <data key="d3">1</data>
+</edge>
+<edge source="1249800524" target="22703429">
+  <data key="d3">1</data>
+</edge>
+<edge source="435128656" target="1328212934">
+  <data key="d3">1</data>
+</edge>
+<edge source="151574869" target="76150411">
+  <data key="d3">1</data>
+</edge>
+<edge source="151574869" target="14413010">
+  <data key="d3">1</data>
+</edge>
+<edge source="2389709155" target="221422356">
+  <data key="d3">1</data>
+</edge>
+<edge source="1531472228" target="48582584">
+  <data key="d3">1</data>
+</edge>
+<edge source="2927384962" target="231126326">
+  <data key="d3">1</data>
+</edge>
+<edge source="571978114" target="525282645">
+  <data key="d3">1</data>
+</edge>
+<edge source="426809736" target="485172405">
+  <data key="d3">2</data>
+</edge>
+<edge source="426809736" target="22703429">
+  <data key="d3">1</data>
+</edge>
+<edge source="23894420" target="23721204">
+  <data key="d3">1</data>
+</edge>
+<edge source="23894420" target="51374505">
+  <data key="d3">1</data>
+</edge>
+<edge source="2932615572" target="1966062223">
+  <data key="d3">1</data>
+</edge>
+<edge source="451639706" target="305202284">
+  <data key="d3">1</data>
+</edge>
+<edge source="51374505" target="254279527">
+  <data key="d3">1</data>
+</edge>
+<edge source="218759595" target="432763933">
+  <data key="d3">1</data>
+</edge>
+<edge source="117150125" target="80956768">
+  <data key="d3">1</data>
+</edge>
+<edge source="59238835" target="310035051">
+  <data key="d3">1</data>
+</edge>
+<edge source="243677635" target="2983245271">
+  <data key="d3">1</data>
+</edge>
+<edge source="198572491" target="1596148664">
+  <data key="d3">1</data>
+</edge>
+<edge source="40772047" target="39871383">
+  <data key="d3">2</data>
+</edge>
+<edge source="40772047" target="114749081">
+  <data key="d3">1</data>
+</edge>
+<edge source="2389322204" target="494329788">
+  <data key="d3">1</data>
+</edge>
+<edge source="2389322204" target="54867849">
+  <data key="d3">1</data>
+</edge>
+<edge source="78387677" target="250710495">
+  <data key="d3">1</data>
+</edge>
+<edge source="167438813" target="325857039">
+  <data key="d3">1</data>
+</edge>
+<edge source="167438813" target="3010221402">
+  <data key="d3">1</data>
+</edge>
+<edge source="167438813" target="1596148664">
+  <data key="d3">2</data>
+</edge>
+<edge source="2894733795" target="361956693">
+  <data key="d3">1</data>
+</edge>
+<edge source="2894733795" target="1340232817">
+  <data key="d3">1</data>
+</edge>
+<edge source="1262275046" target="336075979">
+  <data key="d3">2</data>
+</edge>
+<edge source="457597418" target="946532017">
+  <data key="d3">1</data>
+</edge>
+<edge source="2272031215" target="474091228">
+  <data key="d3">1</data>
+</edge>
+<edge source="2272031215" target="566949843">
+  <data key="d3">2</data>
+</edge>
+<edge source="2272031215" target="1164782162">
+  <data key="d3">1</data>
+</edge>
+<edge source="2272031215" target="17388080">
+  <data key="d3">1</data>
+</edge>
+<edge source="2272031215" target="1414537802">
+  <data key="d3">1</data>
+</edge>
+<edge source="19749363" target="39170043">
+  <data key="d3">1</data>
+</edge>
+<edge source="45787636" target="10105942">
+  <data key="d3">1</data>
+</edge>
+<edge source="236696059" target="819676560">
+  <data key="d3">1</data>
+</edge>
+<edge source="236696059" target="605754185">
+  <data key="d3">1</data>
+</edge>
+<edge source="2432952828" target="447247863">
+  <data key="d3">1</data>
+</edge>
+<edge source="304654862" target="37947269">
+  <data key="d3">1</data>
+</edge>
+<edge source="304654862" target="294584158">
+  <data key="d3">1</data>
+</edge>
+<edge source="127635993" target="55815964">
+  <data key="d3">1</data>
+</edge>
+<edge source="525957664" target="744204973">
+  <data key="d3">1</data>
+</edge>
+<edge source="525957664" target="18234755">
+  <data key="d3">1</data>
+</edge>
+<edge source="16175650" target="133782380">
+  <data key="d3">1</data>
+</edge>
+<edge source="17388080" target="123880887">
+  <data key="d3">1</data>
+</edge>
+<edge source="17388080" target="819676560">
+  <data key="d3">1</data>
+</edge>
+<edge source="17388080" target="1164782162">
+  <data key="d3">1</data>
+</edge>
+<edge source="17388080" target="1414537802">
+  <data key="d3">1</data>
+</edge>
+<edge source="242965065" target="985420748">
+  <data key="d3">1</data>
+</edge>
+<edge source="1414537802" target="566949843">
+  <data key="d3">1</data>
+</edge>
+<edge source="1414537802" target="2361103093">
+  <data key="d3">1</data>
+</edge>
+<edge source="1414537802" target="605754185">
+  <data key="d3">1</data>
+</edge>
+<edge source="1414537802" target="1164782162">
+  <data key="d3">1</data>
+</edge>
+<edge source="1414537802" target="2147825040">
+  <data key="d3">1</data>
+</edge>
+<edge source="1414537802" target="34152206">
+  <data key="d3">1</data>
+</edge>
+<edge source="1164782162" target="435467995">
+  <data key="d3">1</data>
+</edge>
+<edge source="539325012" target="22260540">
+  <data key="d3">2</data>
+</edge>
+<edge source="704250462" target="123880887">
+  <data key="d3">1</data>
+</edge>
+<edge source="1225888412" target="1182925578">
+  <data key="d3">1</data>
+</edge>
+<edge source="1225888412" target="2225736954">
+  <data key="d3">1</data>
+</edge>
+<edge source="1225888412" target="16913094">
+  <data key="d3">1</data>
+</edge>
+<edge source="2343686814" target="2340948996">
+  <data key="d3">1</data>
+</edge>
+<edge source="744204973" target="125840893">
+  <data key="d3">2</data>
+</edge>
+<edge source="744204973" target="2425738400">
+  <data key="d3">1</data>
+</edge>
+<edge source="744204973" target="50962105">
+  <data key="d3">1</data>
+</edge>
+<edge source="306080433" target="349634236">
+  <data key="d3">1</data>
+</edge>
+<edge source="347450046" target="484234573">
+  <data key="d3">1</data>
+</edge>
+<edge source="347450046" target="836854820">
+  <data key="d3">1</data>
+</edge>
+<edge source="16913094" target="2225736954">
+  <data key="d3">1</data>
+</edge>
+<edge source="16913094" target="3107499705">
+  <data key="d3">1</data>
+</edge>
+<edge source="2533374678" target="346801789">
+  <data key="d3">1</data>
+</edge>
+<edge source="2533374678" target="336075979">
+  <data key="d3">1</data>
+</edge>
+<edge source="2533374678" target="21235486">
+  <data key="d3">1</data>
+</edge>
+<edge source="115792599" target="48582584">
+  <data key="d3">2</data>
+</edge>
+<edge source="1532498652" target="540265927">
+  <data key="d3">1</data>
+</edge>
+<edge source="500040415" target="175071135">
+  <data key="d3">1</data>
+</edge>
+<edge source="500040415" target="605754185">
+  <data key="d3">1</data>
+</edge>
+<edge source="500040415" target="1428948032">
+  <data key="d3">1</data>
+</edge>
+<edge source="500040415" target="435467995">
+  <data key="d3">1</data>
+</edge>
+<edge source="50088703" target="30252303">
+  <data key="d3">1</data>
+</edge>
+<edge source="50088703" target="37385776">
+  <data key="d3">2</data>
+</edge>
+<edge source="50088703" target="2163279666">
+  <data key="d3">1</data>
+</edge>
+<edge source="1182925578" target="2225736954">
+  <data key="d3">1</data>
+</edge>
+<edge source="212800280" target="605754185">
+  <data key="d3">1</data>
+</edge>
+<edge source="212800280" target="2147825040">
+  <data key="d3">1</data>
+</edge>
+<edge source="212800280" target="1428948032">
+  <data key="d3">1</data>
+</edge>
+<edge source="309844773" target="976502527">
+  <data key="d3">1</data>
+</edge>
+<edge source="309844773" target="231126326">
+  <data key="d3">2</data>
+</edge>
+<edge source="49228583" target="304296756">
+  <data key="d3">2</data>
+</edge>
+<edge source="49228583" target="907144981">
+  <data key="d3">1</data>
+</edge>
+<edge source="49228583" target="123880887">
+  <data key="d3">1</data>
+</edge>
+<edge source="154139430" target="488052474">
+  <data key="d3">1</data>
+</edge>
+<edge source="331690801" target="36188083">
+  <data key="d3">1</data>
+</edge>
+<edge source="552065851" target="566949843">
+  <data key="d3">1</data>
+</edge>
+<edge source="552065851" target="435467995">
+  <data key="d3">1</data>
+</edge>
+<edge source="22260540" target="129791388">
+  <data key="d3">2</data>
+</edge>
+<edge source="134851396" target="282255277">
+  <data key="d3">1</data>
+</edge>
+<edge source="28328776" target="18234755">
+  <data key="d3">1</data>
+</edge>
+<edge source="28328776" target="311714873">
+  <data key="d3">1</data>
+</edge>
+<edge source="28328776" target="50962105">
+  <data key="d3">1</data>
+</edge>
+<edge source="605754185" target="566949843">
+  <data key="d3">1</data>
+</edge>
+<edge source="605754185" target="435467995">
+  <data key="d3">1</data>
+</edge>
+<edge source="2915812174" target="447247863">
+  <data key="d3">1</data>
+</edge>
+<edge source="36086607" target="1428948032">
+  <data key="d3">1</data>
+</edge>
+<edge source="261325652" target="2205187568">
+  <data key="d3">2</data>
+</edge>
+<edge source="57412452" target="414895897">
+  <data key="d3">1</data>
+</edge>
+<edge source="37137258" target="305202284">
+  <data key="d3">1</data>
+</edge>
+<edge source="100674437" target="2327983291">
+  <data key="d3">1</data>
+</edge>
+<edge source="17841033" target="15771482">
+  <data key="d3">1</data>
+</edge>
+<edge source="17841033" target="114749081">
+  <data key="d3">1</data>
+</edge>
+<edge source="17841033" target="160329209">
+  <data key="d3">1</data>
+</edge>
+<edge source="16669580" target="29204185">
+  <data key="d3">1</data>
+</edge>
+<edge source="39871383" target="168920419">
+  <data key="d3">1</data>
+</edge>
+<edge source="371501976" target="1651709731">
+  <data key="d3">1</data>
+</edge>
+<edge source="1596148664" target="2905351184">
+  <data key="d3">1</data>
+</edge>
+<edge source="1596148664" target="3010221402">
+  <data key="d3">2</data>
+</edge>
+<edge source="1596148664" target="1713114559">
+  <data key="d3">1</data>
+</edge>
+<edge source="985420748" target="41483740">
+  <data key="d3">1</data>
+</edge>
+<edge source="575398878" target="334079251">
+  <data key="d3">1</data>
+</edge>
+<edge source="575398878" target="1846271804">
+  <data key="d3">1</data>
+</edge>
+<edge source="575398878" target="222144134">
+  <data key="d3">1</data>
+</edge>
+<edge source="575398878" target="231126326">
+  <data key="d3">1</data>
+</edge>
+<edge source="1089418225" target="59321980">
+  <data key="d3">1</data>
+</edge>
+<edge source="38351876" target="16051828">
+  <data key="d3">2</data>
+</edge>
+<edge source="283063309" target="1428948032">
+  <data key="d3">1</data>
+</edge>
+<edge source="836854820" target="484234573">
+  <data key="d3">1</data>
+</edge>
+<edge source="836854820" target="907144981">
+  <data key="d3">1</data>
+</edge>
+<edge source="952540201" target="48528862">
+  <data key="d3">1</data>
+</edge>
+<edge source="311714873" target="18234755">
+  <data key="d3">1</data>
+</edge>
+<edge source="311714873" target="50962105">
+  <data key="d3">1</data>
+</edge>
+<edge source="1428948032" target="819676560">
+  <data key="d3">1</data>
+</edge>
+<edge source="40606819" target="26420738">
+  <data key="d3">2</data>
+</edge>
+<edge source="305202284" target="254279527">
+  <data key="d3">2</data>
+</edge>
+<edge source="1340232817" target="361956693">
+  <data key="d3">1</data>
+</edge>
+<edge source="1340232817" target="2205187568">
+  <data key="d3">1</data>
+</edge>
+<edge source="1582128271" target="109725408">
+  <data key="d3">1</data>
+</edge>
+<edge source="1582128271" target="72945644">
+  <data key="d3">1</data>
+</edge>
+<edge source="346389650" target="342181634">
+  <data key="d3">1</data>
+</edge>
+<edge source="2425738400" target="18234755">
+  <data key="d3">1</data>
+</edge>
+<edge source="64859300" target="15388042">
+  <data key="d3">1</data>
+</edge>
+<edge source="64859300" target="357684818">
+  <data key="d3">1</data>
+</edge>
+<edge source="52845734" target="136383882">
+  <data key="d3">1</data>
+</edge>
+<edge source="52845734" target="58842416">
+  <data key="d3">1</data>
+</edge>
+<edge source="71644329" target="72945644">
+  <data key="d3">1</data>
+</edge>
+<edge source="393481389" target="1846271804">
+  <data key="d3">1</data>
+</edge>
+<edge source="485172405" target="24149681">
+  <data key="d3">1</data>
+</edge>
+<edge source="2327983291" target="80956768">
+  <data key="d3">1</data>
+</edge>
+<edge source="2327983291" target="48582584">
+  <data key="d3">1</data>
+</edge>
+<edge source="336075979" target="346801789">
+  <data key="d3">2</data>
+</edge>
+<edge source="336075979" target="2961290481">
+  <data key="d3">2</data>
+</edge>
+<edge source="116448482" target="250185710">
+  <data key="d3">2</data>
+</edge>
+<edge source="2961290481" target="21235486">
+  <data key="d3">1</data>
+</edge>
+<edge source="2225736954" target="2252774689">
+  <data key="d3">1</data>
+</edge>
+<edge source="175400197" target="334079251">
+  <data key="d3">1</data>
+</edge>
+<edge source="334079251" target="1846271804">
+  <data key="d3">1</data>
+</edge>
+<edge source="334079251" target="222144134">
+  <data key="d3">1</data>
+</edge>
+<edge source="231126326" target="222144134">
+  <data key="d3">2</data>
+</edge>
+<edge source="231126326" target="976502527">
+  <data key="d3">1</data>
+</edge>
+<edge source="361956693" target="2205187568">
+  <data key="d3">1</data>
+</edge>
+<edge source="3010221402" target="1713114559">
+  <data key="d3">1</data>
+</edge>
+<edge source="18234755" target="125840893">
+  <data key="d3">2</data>
+</edge>
+<edge source="18234755" target="50962105">
+  <data key="d3">1</data>
+</edge>
+<edge source="819676560" target="474091228">
+  <data key="d3">1</data>
+</edge>
+<edge source="2147825040" target="566949843">
+  <data key="d3">1</data>
+</edge>
+<edge source="2147825040" target="435467995">
+  <data key="d3">1</data>
+</edge>
+<edge source="2147825040" target="34152206">
+  <data key="d3">1</data>
+</edge>
+<edge source="2279206304" target="330657727">
+  <data key="d3">1</data>
+</edge>
+<edge source="1673381282" target="109725408">
+  <data key="d3">1</data>
+</edge>
+<edge source="123880887" target="55815964">
+  <data key="d3">2</data>
+</edge>
+<edge source="229596604" target="55815964">
+  <data key="d3">1</data>
+</edge>
+<edge source="1713114559" target="2983245271">
+  <data key="d3">1</data>
+</edge>
+<edge source="2983245271" target="444464812">
+  <data key="d3">1</data>
+</edge>
+<edge source="2205187568" target="447247863">
+  <data key="d3">1</data>
+</edge>
+<edge source="109440495" target="363140780">
+  <data key="d3">1</data>
+</edge>
+<edge source="26420738" target="328961541">
+  <data key="d3">2</data>
+</edge>
+<edge source="26420738" target="59321980">
+  <data key="d3">2</data>
+</edge>
+<edge source="328961541" target="55815964">
+  <data key="d3">2</data>
+</edge>
+<edge source="17266198" target="342181634">
+  <data key="d3">2</data>
+</edge>
+<edge source="459050534" target="454233704">
+  <data key="d3">1</data>
+</edge>
+<edge source="454233704" target="2163279666">
+  <data key="d3">1</data>
+</edge>
+<edge source="259176107" target="72945644">
+  <data key="d3">1</data>
+</edge>
+<edge source="24149681" target="2928201676">
+  <data key="d3">1</data>
+</edge>
+<edge source="435467995" target="34152206">
+  <data key="d3">1</data>
+</edge>
+<edge source="2901477089" target="247021432">
+  <data key="d3">1</data>
+</edge>
+<edge source="34152206" target="566949843">
+  <data key="d3">3</data>
+</edge>
+<edge source="15970073" target="294584158">
+  <data key="d3">1</data>
+</edge>
+<edge source="54867849" target="494329788">
+  <data key="d3">1</data>
+</edge>
+</graph></graphml>

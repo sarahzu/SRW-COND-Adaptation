@@ -94,7 +94,9 @@ def get_followers():
         output.flush()
         dataframe = pd.read_csv(input)
         ids = [int(elem) for elem in list(dataframe['id'])]
+        count = 0
         for user in ids:
+            count+=1
             followers = []
             friends = []
             try:
@@ -111,6 +113,7 @@ def get_followers():
             friend_string = '"[' + ','.join(str(e) for e in friends) + ']"'
             output.write(str(user) + ',' + follower_string + ',' + friend_string + '\n')
             output.flush()
+            print(count)
 
 
 from ast import literal_eval
@@ -165,7 +168,7 @@ def create_network_graph():
         print('Average weight: ' + str(round(float(avg_sum) / float(graph.number_of_nodes()), 2)))
         print('--------------------------------------')
 
-    with open("./data/network_data.csv", 'r') as input, open("./data/political_leaning_with_ids.csv", 'r') as input_2:
+    with open("./data/network_data_small.csv", 'r') as input, open("./data/political_leaning_with_ids.csv", 'r') as input_2:
         network_data = pd.read_csv(input, converters={'followers': literal_eval, 'friends': literal_eval})
         leaning_data = pd.read_csv(input_2)
         leaning_data.id = leaning_data.id.astype(int)
@@ -184,6 +187,22 @@ def create_network_graph():
 
     print_info(graph)
     write_graphml(graph, "./data/test_graph.graphml")
+    return graph
+
+
+def create_labeled_subgraph(graph):
+    def write_graphml(graph, output_path):
+        print("Writing Graph to " + str(output_path))
+        nx.write_graphml(graph, output_path)
+    labeled_nodes = []
+    for (p, d) in graph.nodes(data=True):
+        if (d['leaning'] =='DEMOCRAT') or (d['leaning'] == 'REPUBLICAN'):
+            labeled_nodes.append(p)
+    graph = nx.subgraph(graph,labeled_nodes)
+    write_graphml(graph, "./data/test_graph_small.graphml")
+
+
+
 
 
 def get_stats(threshold):
@@ -201,4 +220,6 @@ def get_stats(threshold):
 
 
 #get_followers()
-create_network_graph()
+#prune_data()
+t = create_network_graph()
+create_labeled_subgraph(t)
