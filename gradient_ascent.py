@@ -3,6 +3,7 @@
 import math
 import numpy as np
 from numpy import diff
+import derivatives_of_the_random_walk
 
 
 def get_transition_prob_matrix_Q(self, u, v, omega, E):
@@ -28,12 +29,39 @@ def get_transition_prob_matrix_Q(self, u, v, omega, E):
 
 
 class Algorithm2:
+
+    def __init__(self, learning_rate):
+        self.learning_rate = learning_rate
+
     # TODO generate u, v, initial omega and E (set of Edges)
     v = [0, 0, 0]
     u = [0, 0, 0]
-    initial_omega = 0
+    initial_omega = np.array([])[:, np.newaxis]
     E = [[0, 0, 0], [0, 0, 0]]
     Q = get_transition_prob_matrix_Q(u, v, initial_omega, E)
+
+    # TODO: generate neighbors
+    def get_neighbors_of_node(self, u):
+        return []
+
+    # TODO: get Xe(u, v)
+    def get_Xe(self, u, v):
+        # empty value
+        return np.array([])[:, np.newaxis]
+
+    # TODO: generate V_L_ext
+    def get_V_L_ext(self):
+        return []
+
+    # TODO: generate V
+    def get_V(self):
+        return []
+
+    def get_a_ui(self, neighbors, u, omega):
+        a_u = 0
+        for i in neighbors:
+            a_u += self.f_omega(np.dot(omega.T, self.get_Xe(u, i)))
+        return a_u
 
     @staticmethod
     def f_omega(x):
@@ -56,21 +84,6 @@ class Algorithm2:
         """
         pT = (1 - alpha) * np.dot(initial_pT, self.Q) + alpha * 1
         return pT
-
-    # TODO: generate neighbors
-    def get_neighbors_of_node(self, u):
-        return []
-
-    def get_a_ui(self, neighbors, u, omega):
-        a_u = 0
-        for i in neighbors:
-            a_u += self.f_omega(np.dot(omega.T, self.get_Xe(u, i)))
-        return a_u
-
-    # TODO: get Xe(u, v)
-    def get_Xe(self, u, v):
-        # empty value
-        return np.array([])[:, np.newaxis]
 
     def get_j_omega(self, V_L_ext, V):
         """
@@ -208,7 +221,7 @@ class Algorithm2:
             pv += self.p[j] * self.Q[j][v_index]
         return pv
 
-    def gradient_ascent(self, learning_rate):
+    def gradient_ascent(self):
         """
         generate the optimal feature weight vector (omega) according to
         Algorithm 2
@@ -228,22 +241,19 @@ class Algorithm2:
 
         while self.get_j_omega(V_L_ext, V) \
                 != prev_j_omega - threshold:
-            # TODO compute pT and derivative of p with Algorithm 3
+            # compute pT and derivative of pT with Algorithm 3
+            pT, d_pT = derivatives_of_the_random_walk.\
+                Algorithm3.derivatives_of_the_random_walk(
+                V, self.u, self.v, self.E)
             for k in range(0, len(omega)):
                 if k > 0:
                     omega[k] = omega[k - 1] \
-                               + (learning_rate * \
-                                 self.get_derivative_of_j_omega(
-                                     V_L_ext, V))
+                               + (self.learning_rate
+                                  * self.get_derivative_of_j_omega(
+                        V_L_ext, V, omega))
 
-    # TODO: generate V_L_ext
-    def get_V_L_ext(self):
-        return []
-
-    # TODO: generate V
-    def get_V(self):
-        return []
+        return omega
 
 
 if __name__ == '__main__':
-    optimal_weight_vector = Algorithm2.gradient_ascent(0, 0, 3)
+    optimal_weight_vector = Algorithm2(0).gradient_ascent()
