@@ -184,9 +184,29 @@ def create_network_graph():
             add_edge(graph, row['id'], name, leaning, follower, str(follower), 'Unknown')
         for friend in row['friends']:
             add_edge(graph, row['id'], name, leaning, friend, str(friend), 'Unknown')
-
+    print_info(graph)
+    graph = prune_graph(graph)
     print_info(graph)
     write_graphml(graph, "./data/test_graph.graphml")
+    return graph
+
+
+def prune_graph(graph):
+    nodes_to_remove = []
+    edges_to_remove=[]
+    out_deg = graph.degree()
+
+    for edge in graph.edges():
+        if edge[0] == edge[1]:
+            edges_to_remove.append(edge)
+
+    for (a,b) in out_deg:
+        if b < 2:
+            nodes_to_remove.append(a)
+    graph.remove_edges_from(edges_to_remove)
+    graph.remove_nodes_from(nodes_to_remove)
+    iso = list(nx.isolates(graph))
+    graph.remove_nodes_from(iso)
     return graph
 
 
@@ -200,9 +220,6 @@ def create_labeled_subgraph(graph):
             labeled_nodes.append(p)
     graph = nx.subgraph(graph,labeled_nodes)
     write_graphml(graph, "./data/test_graph_small.graphml")
-
-
-
 
 
 def get_stats(threshold):
@@ -219,7 +236,4 @@ def get_stats(threshold):
         print((threshold * len(df) / 5000 * 15) / 60)
 
 
-#get_followers()
-#prune_data()
-t = create_network_graph()
-create_labeled_subgraph(t)
+create_network_graph()
