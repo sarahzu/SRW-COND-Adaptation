@@ -3,6 +3,7 @@ import json
 import pandas as pd
 import numpy as np
 import networkx as nx
+from ast import literal_eval
 
 cred = json.load(open("./twitter_credentials"))
 t = Twarc(cred["api_key"], cred["cons_sec"], cred["acc_token"], cred["acc_token_sec"])
@@ -96,7 +97,7 @@ def get_followers():
         ids = [int(elem) for elem in list(dataframe['id'])]
         count = 0
         for user in ids:
-            count+=1
+            count += 1
             followers = []
             friends = []
             try:
@@ -114,9 +115,6 @@ def get_followers():
             output.write(str(user) + ',' + follower_string + ',' + friend_string + '\n')
             output.flush()
             print(count)
-
-
-from ast import literal_eval
 
 
 def create_network_graph():
@@ -142,10 +140,10 @@ def create_network_graph():
 
         if not graph.has_edge(node_1, node_2):
             if not graph.has_node(node_1):
-                graph.add_node(node_1, weight= 1, label= label_1, leaning = leaning_1)
+                graph.add_node(node_1, weight=1, label=label_1, leaning=leaning_1)
             if not graph.has_node(node_2):
-                graph.add_node(node_2, weight= 1, label=  label_2, leaning =  leaning_2)
-            graph.add_edge(node_1, node_2, weight = 1)
+                graph.add_node(node_2, weight=1, label=label_2, leaning=leaning_2)
+            graph.add_edge(node_1, node_2, weight=1)
         else:
             graph[node_1][node_2]['weight'] += 1
 
@@ -168,7 +166,7 @@ def create_network_graph():
         print('Average weight: ' + str(round(float(avg_sum) / float(graph.number_of_nodes()), 2)))
         print('--------------------------------------')
 
-    with open("./data/network_data_small.csv", 'r') as input, open("./data/political_leaning_with_ids.csv", 'r') as input_2:
+    with open("./data/pruned_gathered_data.csv", 'r') as input, open("./data/political_leaning_with_ids.csv", 'r') as input_2:
         network_data = pd.read_csv(input, converters={'followers': literal_eval, 'friends': literal_eval})
         leaning_data = pd.read_csv(input_2)
         leaning_data.id = leaning_data.id.astype(int)
@@ -185,40 +183,66 @@ def create_network_graph():
         for friend in row['friends']:
             add_edge(graph, row['id'], name, leaning, friend, str(friend), 'Unknown')
     print_info(graph)
-    graph = prune_graph(graph)
-    print_info(graph)
+    prune_graph(graph)
     write_graphml(graph, "./data/test_graph.graphml")
     return graph
 
 
 def prune_graph(graph):
+    def write_graphml(graph, output_path):
+        print("Writing Graph to " + str(output_path))
+        nx.write_graphml(graph, output_path)
+
     nodes_to_remove = []
-    edges_to_remove=[]
+    edges_to_remove = []
     out_deg = graph.degree()
 
     for edge in graph.edges():
         if edge[0] == edge[1]:
             edges_to_remove.append(edge)
 
-    for (a,b) in out_deg:
+    for (a, b) in out_deg:
         if b < 2:
             nodes_to_remove.append(a)
-    graph.remove_edges_from(edges_to_remove)
-    graph.remove_nodes_from(nodes_to_remove)
+    #graph.remove_edges_from(edges_to_remove)
+    #graph.remove_nodes_from(nodes_to_remove)
     iso = list(nx.isolates(graph))
     graph.remove_nodes_from(iso)
-    return graph
+    write_graphml(graph, "./data/test_graph_pruned.graphml")
+
+
+def prune_data_set():
+    with open('./data/gathered_data.csv') as input:
+        df = pd.read_csv(input, converters={'followers': literal_eval, 'friends': literal_eval})
+    df = df.set_index('id',drop=False)
+    list_of_ids = list(df['id'])
+    for i, row in df.iterrows():
+        followers = []
+        friends = []
+        for id in row['followers']:
+            if int(id) in list_of_ids:
+                followers.append(str(id))
+        for id in row['friends']:
+            if int(id) in list_of_ids:
+                friends.append(str(id))
+        f = '"[' + ','.join(followers) + ']"'
+        df.at[row['id'],'followers'] = '[' + ','.join(str(e) for e in followers) + ']'
+        df.at[row['id'],'friends'] = '[' + ','.join(str(e) for e in friends) + ']'
+    with open('./data/pruned_gathered_data.csv','w+') as output:
+        df.to_csv(output,index=False)
+
 
 
 def create_labeled_subgraph(graph):
     def write_graphml(graph, output_path):
         print("Writing Graph to " + str(output_path))
         nx.write_graphml(graph, output_path)
+
     labeled_nodes = []
     for (p, d) in graph.nodes(data=True):
-        if (d['leaning'] =='DEMOCRAT') or (d['leaning'] == 'REPUBLICAN'):
+        if (d['leaning'] == 'DEMOCRAT') or (d['leaning'] == 'REPUBLICAN'):
             labeled_nodes.append(p)
-    graph = nx.subgraph(graph,labeled_nodes)
+    graph = nx.subgraph(graph, labeled_nodes)
     write_graphml(graph, "./data/test_graph_small.graphml")
 
 
@@ -237,3 +261,4 @@ def get_stats(threshold):
 
 
 create_network_graph()
+#prune_data_set()
