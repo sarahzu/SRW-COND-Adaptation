@@ -166,7 +166,7 @@ def create_network_graph():
         print('Average weight: ' + str(round(float(avg_sum) / float(graph.number_of_nodes()), 2)))
         print('--------------------------------------')
 
-    with open("./data/pruned_gathered_data.csv", 'r') as input, open("./data/political_leaning_with_ids.csv", 'r') as input_2:
+    with open("./data/gathered_data.csv", 'r') as input, open("./data/political_leaning_with_ids.csv", 'r') as input_2:
         network_data = pd.read_csv(input, converters={'followers': literal_eval, 'friends': literal_eval})
         leaning_data = pd.read_csv(input_2)
         leaning_data.id = leaning_data.id.astype(int)
@@ -184,7 +184,7 @@ def create_network_graph():
             add_edge(graph, row['id'], name, leaning, friend, str(friend), 'Unknown')
     print_info(graph)
     prune_graph(graph)
-    write_graphml(graph, "./data/test_graph.graphml")
+    #write_graphml(graph, "./data/graph.graphml")
     return graph
 
 
@@ -202,13 +202,14 @@ def prune_graph(graph):
             edges_to_remove.append(edge)
 
     for (a, b) in out_deg:
-        if b < 2:
+        if b < 30:
             nodes_to_remove.append(a)
-    #graph.remove_edges_from(edges_to_remove)
-    #graph.remove_nodes_from(nodes_to_remove)
+    graph.remove_edges_from(edges_to_remove)
+    graph.remove_nodes_from(nodes_to_remove)
     iso = list(nx.isolates(graph))
     graph.remove_nodes_from(iso)
-    write_graphml(graph, "./data/test_graph_pruned.graphml")
+    print(nx.info(graph))
+    write_graphml(graph, "./data/complete_graph.graphml")
 
 
 def prune_data_set():
@@ -230,7 +231,6 @@ def prune_data_set():
         df.at[row['id'],'friends'] = '[' + ','.join(str(e) for e in friends) + ']'
     with open('./data/pruned_gathered_data.csv','w+') as output:
         df.to_csv(output,index=False)
-
 
 
 def create_labeled_subgraph(graph):
@@ -259,6 +259,4 @@ def get_stats(threshold):
         print(a / 5000 * 15 + b / 5000 * 15)
         print((threshold * len(df) / 5000 * 15) / 60)
 
-
 create_network_graph()
-#prune_data_set()
