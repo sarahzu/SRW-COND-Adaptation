@@ -38,6 +38,8 @@ extended_nodes = np.asarray(list(extended_graph.nodes()))
 def generate_page_rank_score_plus_derivative_and_optimal_omega():
     # initial_omega = np.empty([1])
     initial_omega = np.array([1,1,1])
+    print('\n\n')
+    print('Beginning SRW-COND-Algorithm\n')
     print("initial omega:", initial_omega)
     V = original_nodes
     V_L_ext = extended_nodes
@@ -52,16 +54,10 @@ def generate_page_rank_score_plus_derivative_and_optimal_omega():
     algo3_object = derivatives_of_the_random_walk.Algorithm3(omega, Xe,
                                                               neighbor_dict)
     Q = algo2_object.generate_full_transition_probability_matrix_Q(V, omega)
-    print("Q:", Q)
+    print("Q: \n", Q)
     pT, d_pT = algo3_object.derivatives_of_the_random_walk(V, Q)
-    print("Page Rank:", pT, "\nDerivative Page Rank:", d_pT, "\nomega:", omega)
+    print("Page Rank: \n", pT, "\nDerivative Page Rank: \n", d_pT, "\nOmega: \n", omega)
 
-    print("v:", v)
-    print("u:", u)
-    print("V:", V)
-    print("V L ext:", V_L_ext)
-    print("Xe:", Xe)
-    print("neighbors:", neighbor_dict)
 
 
 generate_page_rank_score_plus_derivative_and_optimal_omega()

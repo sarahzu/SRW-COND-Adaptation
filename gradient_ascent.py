@@ -33,7 +33,7 @@ class Algorithm2:
         :return:        full transition probability matrix
         """
         V_without_first_element = V[1:]
-        Q = np.zeros([len(V), len(V)])
+        Q = np.full((len(V), len(V)),1)
         for u, index_u in zip(V, range(0, len(V))):
             for v, index_v in zip(V_without_first_element, range(0, len(V_without_first_element))):
                 Q_uv = self.get_transition_prob_matrix_Q(u, v, omega)
@@ -136,7 +136,8 @@ class Algorithm2:
         if a_ui != 0:
             Q_uv = a_uv / a_ui
         else:
-            Q_uv = 0
+            #TODO
+            Q_uv = a_uv
 
         if not Q_uv or math.isnan(Q_uv):
             Q_uv = 0
@@ -250,7 +251,7 @@ class Algorithm2:
         summed_derivative_pv = 0
         for v_index in range(0, len(V)):
             d_omega = omega[0] #np.gradient(omega)
-            print(d_omega)
+            print('Omega: ' + str(d_omega))
             pv = self.get_pu(v_index, V, omega, Q)
             if d_omega != 0:
                 try:
@@ -357,7 +358,7 @@ class Algorithm2:
                                + (self.learning_rate
                                   * self.get_derivative_of_j_omega(
                         V_L_ext, V, omega, Q))
-                    print(omega)
+                    #print('Omega: '+str(omega))
                 else:
                     omega[k] = self.learning_rate \
                                * self.get_derivative_of_j_omega(

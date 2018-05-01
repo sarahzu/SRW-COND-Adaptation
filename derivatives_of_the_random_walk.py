@@ -129,8 +129,8 @@ class Algorithm3:
 
         sum_d_f_omega_of_feature_vector_of_neighbors = 0
         for i in neighbors:
-            sum_d_f_omega_of_feature_vector_of_neighbors += \
-                diff(self.f_omega(np.dot(omega.T, self.get_Xe(j, i)))) / omega
+            sum_d_f_omega_of_feature_vector_of_neighbors += self.d_f_omega(np.dot(omega.T, self.get_Xe(j, i)))
+                #diff(self.f_omega(np.dot(omega.T, self.get_Xe(j, i)))) / omega
 
         second_formula_part = f_omega_of_omega_and_Xe_ju \
                               * sum_d_f_omega_of_feature_vector_of_neighbors / \
