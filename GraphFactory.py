@@ -376,9 +376,13 @@ class GraphFactory:
                 unlabeled_nodes.append(p)
         return nx.subgraph(self.graph, unlabeled_nodes)
 
-    def create_feature_vector(self):
+    def create_feature_vector(self, graph = None):
+        if graph == None:
+            used_graph = self.graph
+        else:
+            used_graph = graph
         feature_vector = {}
-        for edge in self.graph.edges(data=True):
+        for edge in used_graph.edges(data=True):
             node_1, node_2 = edge[0],edge[1]
             try:
                 node_1_hashtags = self.dataframe.at[node_1,'hashtags']
