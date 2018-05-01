@@ -15,3 +15,4 @@ labeled_graph.print_info()
 labeled_graph.extend_labeled_graph()
 
 feature_vector = labeled_graph.create_feature_vector()
+print(feature_vector)

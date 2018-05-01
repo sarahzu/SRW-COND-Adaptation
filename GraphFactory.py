@@ -6,7 +6,6 @@ import itertools
 import operator
 from multiprocessing import Pool
 import community
-import matplotlib
 import numpy as np
 import ast
 import networkx as nx
