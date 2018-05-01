@@ -359,7 +359,7 @@ class Algorithm2:
             # compute pT and derivative of pT with Algorithm 3
             p, d_p = derivatives_of_the_random_walk.Algorithm3(
                 omega, self.Xe, self.neighbors).derivatives_of_the_random_walk(
-                self.V, Q)
+                self.V_L_ext, Q)
             for k in range(0, len(omega)):
                 if k > 0:
                     omega[k] = omega[k - 1] \

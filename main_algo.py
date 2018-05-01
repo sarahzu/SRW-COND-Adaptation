@@ -53,9 +53,9 @@ def generate_page_rank_score_plus_derivative_and_optimal_omega():
     omega = algo2_object.gradient_ascent()
     algo3_object = derivatives_of_the_random_walk.Algorithm3(omega, Xe,
                                                               neighbor_dict)
-    Q = algo2_object.generate_full_transition_probability_matrix_Q(V, omega)
+    Q = algo2_object.generate_full_transition_probability_matrix_Q(V_L_ext, omega)
     print("Q: \n", Q)
-    pT, d_pT = algo3_object.derivatives_of_the_random_walk(V, Q)
+    pT, d_pT = algo3_object.derivatives_of_the_random_walk(V_L_ext, Q)
     print("Page Rank: \n", pT, "\nDerivative Page Rank: \n", d_pT, "\nOmega: \n", omega)
 
 
