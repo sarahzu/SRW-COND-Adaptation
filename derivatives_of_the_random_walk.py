@@ -82,7 +82,7 @@ class Algorithm3:
         sum_d_pj_times_Q_ju = 0
         sum_pj_times_d_Q_ju = 0
 
-        for j in range(0, len(Q[u_index])):
+        for j in range(0, len(p)):
             p_j = p[j]
             #TODO: Change in the end
             try:
@@ -92,7 +92,7 @@ class Algorithm3:
             Q_ju = Q[j][u_index]
             sum_d_pj_times_Q_ju += d_pj * Q_ju
 
-        for j in range(0, len(Q[u_index])):
+        for j in range(0, len(p)):
             p_j = p[j]
             # Q_ju = Q[j][u]
             # d_Q_ju = diff(Q_ju) / d_omega
