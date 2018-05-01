@@ -55,7 +55,10 @@ class Algorithm2:
         #     Xe_uv = self.Xe.get((u, v))
         # else:
         #     Xe_uv = np.array([0, 0, 0])
-        return self.Xe.get((int(u), int(v)))
+        Xe_uv = self.Xe.get((int(u), int(v)))
+        if not Xe_uv:
+            Xe_uv = np.array([0, 0, 0])
+        return Xe_uv
 
     def get_V_L_ext(self):
         return self.V_L_ext
