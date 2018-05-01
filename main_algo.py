@@ -11,17 +11,17 @@ from GraphFactory import GraphFactory
 # complete_graph.graphml
 labeled_graph = GraphFactory('labeled_graph_trump')
 
-csv_path = './data_2/clean_data/election_debate_leaning_2016.csv'
+csv_path = './data_2/clean_data/temp.csv'
 graph_path = './data_2/clean_data/election_debate_leaning_2016.graphml'
 ext_graph_path = './data_2/clean_data/extended_graph.graphml'
 
 
 labeled_graph.create_graphs_from_dataframe('QT_REP',csv_path)
-labeled_graph.prune_graph(1,2,2,True)
+labeled_graph.prune_graph(1,1,1,True)
 labeled_graph.print_info()
-labeled_graph.extend_labeled_graph()
-original_graph = labeled_graph.subgraphs[0].nodes()
-extended_graph = labeled_graph.subgraphs[1].nodes()
+original_graph,extended_graph = labeled_graph.extend_labeled_graph()
+#original_graph = labeled_graph.subgraphs[0].graph
+#extended_graph = labeled_graph.subgraphs[1].graph
 
 
 # generating dict in the form of {node_1:[neigbors],node_2:[neighbors]}
@@ -31,8 +31,8 @@ for node in original_graph.nodes():
 
 feature_vector = labeled_graph.create_feature_vector()
 
-original_nodes = list(original_graph.nodes())
-extended_nodes = list(extended_graph.nodes())
+original_nodes = np.asarray(list(original_graph.nodes()))
+extended_nodes = np.asarray(list(extended_graph.nodes()))
 
 
 def generate_page_rank_score_plus_derivative_and_optimal_omega():

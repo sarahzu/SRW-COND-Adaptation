@@ -418,7 +418,7 @@ class GraphFactory:
                 feature_2 = len(set(user_mentions_1).intersection(set(user_mentions_2)))
                 feature_vector[(edge[0],edge[1])] = [feature_1,feature_2,edge[2]['weight']]
             except:
-                feature_vector[(edge[0], edge[1])] = 0
+                feature_vector[(edge[0], edge[1])] = [0,0,0]
         return feature_vector
 
     def extend_labeled_graph(self):
@@ -459,8 +459,9 @@ class GraphFactory:
         extendible_node_Set = set(extendible_nodes)
 
         extended_graph = nx.subgraph(self.graph, list(extendible_node_Set))
-        self.save_as_subgraph(original_graph,'original_graph')
-        self.save_as_subgraph(extended_graph,'extended_graph')
+        return original_graph,extended_graph
+        #self.save_as_subgraph(original_graph,'original_graph')
+        #self.save_as_subgraph(extended_graph,'extended_graph')
 
 """
 The following methods __btwn_pool, __partitions and calculate_betweenness where taken from
