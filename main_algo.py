@@ -1,5 +1,3 @@
-import networkx as nx
-import pandas as pd
 import gradient_ascent
 import derivatives_of_the_random_walk
 import numpy as np
@@ -15,50 +13,40 @@ csv_path = './data_2/clean_data/temp.csv'
 graph_path = './data_2/clean_data/election_debate_leaning_2016.graphml'
 ext_graph_path = './data_2/clean_data/extended_graph.graphml'
 
-
-labeled_graph.create_graphs_from_dataframe('QT_REP',csv_path)
-labeled_graph.prune_graph(1,1,1,True)
+labeled_graph.create_graphs_from_dataframe('QT_REP', csv_path)
+labeled_graph.prune_graph(1, 1, 1, True)
 labeled_graph.print_info()
-original_graph,extended_graph = labeled_graph.extend_labeled_graph()
-#original_graph = labeled_graph.subgraphs[0].graph
-#extended_graph = labeled_graph.subgraphs[1].graph
-
+original_graph, extended_graph = labeled_graph.extend_labeled_graph()
+original_nodes = np.asarray(list(original_graph.nodes()))
+extended_nodes = np.asarray(list(extended_graph.nodes()))
 
 # generating dict in the form of {node_1:[neigbors],node_2:[neighbors]}
+print('Calculate Neighbors...\n')
 neighbor_dict = {}
 for node in original_graph.nodes():
     neighbor_dict[int(node)] = list(original_graph.neighbors(node))
 
 print('Calculate Feature Vector...\n')
-
 feature_vector = labeled_graph.create_feature_vector(extended_graph)
-
-original_nodes = np.asarray(list(original_graph.nodes()))
-extended_nodes = np.asarray(list(extended_graph.nodes()))
 
 
 def generate_page_rank_score_plus_derivative_and_optimal_omega():
     # initial_omega = np.empty([1])
-    initial_omega = np.array([1,1,1])
+    initial_omega = np.array([1, 1, 1])
     print('\n\n')
     print('Beginning SRW-COND-Algorithm\n')
-    print("Initial omega: ", initial_omega)
     V = original_nodes
     V_L_ext = extended_nodes
     v = V[10]
     u = V[4]
     Xe = feature_vector
-    algo2_object = gradient_ascent.Algorithm2(1.0, u, v, 4, 10, initial_omega,
-                                              neighbor_dict, Xe, V_L_ext, V)
-
+    algo2_object = gradient_ascent.Algorithm2(1.0, u, v, 4, 10, initial_omega, neighbor_dict, Xe, V_L_ext, V)
     omega = algo2_object.gradient_ascent()
-    algo3_object = derivatives_of_the_random_walk.Algorithm3(omega, Xe,
-                                                              neighbor_dict)
+    algo3_object = derivatives_of_the_random_walk.Algorithm3(omega, Xe, neighbor_dict)
     Q = algo2_object.generate_full_transition_probability_matrix_Q(V, omega)
     print("Q: \n", Q)
     pT, d_pT = algo3_object.derivatives_of_the_random_walk(V, Q)
     print("Page Rank: \n", pT, "\nDerivative Page Rank: \n", d_pT, "\nOmega: \n", omega)
-
 
 
 generate_page_rank_score_plus_derivative_and_optimal_omega()
