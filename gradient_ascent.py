@@ -33,7 +33,7 @@ class Algorithm2:
         :return:        full transition probability matrix
         """
         V_without_first_element = V[1:]
-        Q = np.empty([len(V), len(V)])
+        Q = np.zeros([len(V), len(V)])
         for u, index_u in zip(V, range(0, len(V))):
             for v, index_v in zip(V_without_first_element, range(0, len(V_without_first_element))):
                 Q_uv = self.get_transition_prob_matrix_Q(u, v, omega)
@@ -172,7 +172,7 @@ class Algorithm2:
 
         derivative_j_omega = \
             ((sum_derivative_pu_in_V_L_ext * sum_pv_in_V) - (sum_pu_in_V_L_ext
-             * sum_derivative_pv_in_V)) / pow(sum_pv_in_V, 2)
+             * sum_derivative_pv_in_V)) / np.power(sum_pv_in_V, 2)
 
         return derivative_j_omega
 
@@ -236,7 +236,10 @@ class Algorithm2:
             print(d_omega)
             pv = self.get_pu(v_index, V, omega, Q)
             if d_omega != 0:
-                d_pv = diff(pv) / d_omega
+                try:
+                    d_pv = diff(pv) / d_omega
+                except:
+                    d_pv = 0
             else:
                 d_pv = pv
             summed_derivative_pv += d_pv

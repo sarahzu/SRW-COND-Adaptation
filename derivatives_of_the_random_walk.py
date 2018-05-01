@@ -25,9 +25,9 @@ class Algorithm3:
                     d_p:    derivative page rank score vector
         """
         # page rank
-        p = np.empty([len(V)])
+        p = np.zeros([len(V)])
         # derivative page rank
-        d_p = np.empty([len(V), len(self.omega)])
+        d_p = np.zeros([len(V), len(self.omega)])
 
         if len(V) != 0:
             for u_index in range(0, len(V)):
@@ -47,21 +47,21 @@ class Algorithm3:
         first = True
         counter = 0
         # print("p & prev p:", p, prev_p)
-        while not np.array_equal(p, prev_p) and not first:
+        while not np.array_equal(p, prev_p) or first:
             if counter >= self.iteration_max:
                 break
             counter += 1
             first = False
             prev_p = p
             for u_index in range(0, len(V)):
-                if prev_p:
+                if prev_p is not None:
                     p[u_index] = self.get_pj_and_Qju_sum(prev_p, Q, u_index)
                 else:
                     p[u_index] = 0
         for k in range(0, len(self.omega)):
             first = True
             counter = 0
-            while not np.array_equal(d_p, prev_d_p) and not first:
+            while not np.array_equal(d_p, prev_d_p) or first:
                 if counter >= self.iteration_max:
                     break
                 counter += 1
@@ -69,6 +69,7 @@ class Algorithm3:
                 for u_index in range(0, len(V)):
                     d_p[u_index] = self.get_derivative_pu(V[u_index], u_index,
                                                           self.omega, p, Q)
+                first = False
         return p, d_p
 
     def get_derivative_pu(self, u, u_index, omega, p, Q):
@@ -83,8 +84,12 @@ class Algorithm3:
 
         for j in range(0, len(Q[u_index])):
             p_j = p[j]
-            d_pj = diff(p_j) / d_omega
-            Q_ju = Q[j][u]
+            #TODO: Change in the end
+            try:
+                d_pj = diff(p_j) / d_omega
+            except:
+                d_pj = 0
+            Q_ju = Q[j][u_index]
             sum_d_pj_times_Q_ju += d_pj * Q_ju
 
         for j in range(0, len(Q[u_index])):
@@ -110,8 +115,7 @@ class Algorithm3:
         d_Q_ju = 0
         sum_f_omega_of_feature_vector_of_neighbors = 0
         for i in neighbors:
-            sum_f_omega_of_feature_vector_of_neighbors \
-                += self.f_omega(np.dot(omega.T, self.get_Xe(u, i)))
+            sum_f_omega_of_feature_vector_of_neighbors += self.f_omega(np.dot(omega.T, self.get_Xe(u, i)))
 
         f_omega_of_omega_and_Xe_ju = \
             self.f_omega(np.dot(omega.T, self.get_Xe(j, u)))
@@ -136,11 +140,9 @@ class Algorithm3:
         return d_Q_ju
 
     def get_Xe(self, u, v):
-        # Xe = {('161148986', '56777838'): [1], ...}
-        if self.Xe.get((u, v)):
-            Xe_uv = np.array([1])
-        else:
-            Xe_uv = np.array([0])
+        Xe_uv = self.Xe.get((int(u), int(v)))
+        if not Xe_uv:
+            Xe_uv = np.array([0, 0, 0])
         return Xe_uv
 
     @staticmethod
