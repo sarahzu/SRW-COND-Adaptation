@@ -42,34 +42,24 @@ class Algorithm2:
 
         return Q
 
-    # TODO generate u, v, initial omega and E (set of Edges)
-    # v = [0, 0, 0]
-    # u = [0, 0, 0]
-    # initial_omega = np.array([])[:, np.newaxis]
-    # E = [[0, 0, 0], [0, 0, 0]]
-
-    # TODO: generate neighbors
     def get_neighbors_of_node(self, u):
         neighbors = self.neighbors.get(int(u))
         if not neighbors:
             neighbors = []
         return neighbors
 
-    # TODO: get Xe(u, v)
     def get_Xe(self, u, v):
-        # Xe = {('161148986', '56777838'): [1], ...}
-        # print((u, v))
+        # Xe = {('161148986', '56777838'): [1,1,1], ...}
+
         # if self.Xe.get((u, v)):
         #     Xe_uv = self.Xe.get((u, v))
         # else:
         #     Xe_uv = np.array([0, 0, 0])
-        return self.Xe.get((u, v))
+        return self.Xe.get((int(u), int(v)))
 
-    # TODO: generate V_L_ext
     def get_V_L_ext(self):
         return self.V_L_ext
 
-    # TODO: generate V
     def get_V(self):
         return self.V
 
