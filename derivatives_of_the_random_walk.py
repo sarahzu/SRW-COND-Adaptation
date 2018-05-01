@@ -58,6 +58,8 @@ class Algorithm3:
                     p[u_index] = self.get_pj_and_Qju_sum(prev_p, Q, u_index)
                 else:
                     p[u_index] = 0
+
+        # derivative
         for k in range(0, len(self.omega)):
             first = True
             counter = 0
@@ -85,12 +87,12 @@ class Algorithm3:
         for j in range(0, len(p)):
             p_j = p[j]
             #TODO: Change in the end
-            try:
-                d_pj = diff(p_j) / d_omega
-            except:
-                d_pj = 0
+            # try:
+            #     d_pj = diff(p_j) / d_omega
+            # except:
+            #     d_pj = 0
             Q_ju = Q[j][u_index]
-            sum_d_pj_times_Q_ju += d_pj * Q_ju
+            sum_d_pj_times_Q_ju += p_j * Q_ju
 
         for j in range(0, len(p)):
             p_j = p[j]
