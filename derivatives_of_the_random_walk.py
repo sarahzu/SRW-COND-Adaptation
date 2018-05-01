@@ -119,12 +119,13 @@ class Algorithm3:
 
         f_omega_of_omega_and_Xe_ju = \
             self.f_omega(np.dot(omega.T, self.get_Xe(j, u)))
-        d_f_omega_of_omega_and_Xe_ju = diff(f_omega_of_omega_and_Xe_ju) / omega
+        # d_f_omega_of_omega_and_Xe_ju = diff(f_omega_of_omega_and_Xe_ju) / omega
+        d_f_omega_of_omega_and_Xe_ju = self.d_f_omega(np.dot(omega.T, self.get_Xe(j, u)))
 
         first_formula_part = \
             (d_f_omega_of_omega_and_Xe_ju
              * sum_f_omega_of_feature_vector_of_neighbors) / \
-            pow(sum_f_omega_of_feature_vector_of_neighbors, 2)
+            np.power(sum_f_omega_of_feature_vector_of_neighbors, 2)
 
         sum_d_f_omega_of_feature_vector_of_neighbors = 0
         for i in neighbors:
@@ -133,7 +134,7 @@ class Algorithm3:
 
         second_formula_part = f_omega_of_omega_and_Xe_ju \
                               * sum_d_f_omega_of_feature_vector_of_neighbors / \
-                              pow(sum_d_f_omega_of_feature_vector_of_neighbors,
+                              np.power(sum_d_f_omega_of_feature_vector_of_neighbors,
                                   2)
 
         d_Q_ju = first_formula_part - second_formula_part
@@ -161,6 +162,23 @@ class Algorithm3:
             else:
                 f_omega = 0
         return f_omega
+
+    def d_f_omega(self, x):
+        """
+        Derivative Sigmund Function
+
+        :param x: function parameter
+        :return:  derivative sigmund function result
+        """
+        if math.isnan(x):
+            d_f_omega = 0
+        else:
+            if (1.0 + np.exp(x * (-1))) != 0:
+                d_f_omega = (1.0 / (1.0 + np.exp(-x))) \
+                            - np.power((1.0/(1.0 + np.exp(-x))), 2)
+            else:
+                d_f_omega = 0
+        return d_f_omega
 
     @staticmethod
     def get_pj_and_Qju_sum(p, Q, index_u):
