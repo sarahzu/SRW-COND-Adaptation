@@ -140,8 +140,8 @@ class Algorithm2:
             #TODO
             Q_uv = a_uv
 
-        if not Q_uv or math.isnan(Q_uv):
-            Q_uv = 0
+#        if not Q_uv or math.isnan(Q_uv):
+#       Q_uv = 0
 
         return Q_uv
 
@@ -251,6 +251,7 @@ class Algorithm2:
         """
         summed_derivative_pv = 0
         for v_index in range(0, len(V)):
+
             d_omega = omega #np.gradient(omega)
             print('Omega: ' + str(d_omega))
             d_pu = self.get_pu(v_index, V, omega, Q, d_p)
@@ -365,6 +366,7 @@ class Algorithm2:
                     omega[k] = omega[k - 1] \
                                + (self.learning_rate
                                   * self.get_derivative_of_j_omega(
+
                         V_L_ext, V, omega, Q, p, d_p))
                     #print('Omega: '+str(omega))
                 else:
