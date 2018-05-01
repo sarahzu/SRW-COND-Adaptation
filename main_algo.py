@@ -65,8 +65,7 @@ def generate_page_rank_score_plus_derivative_and_optimal_omega():
     print("neighbors:", neighbor_dict)
 
 
-if __name__ == '__main__':
-    generate_page_rank_score_plus_derivative_and_optimal_omega()
+generate_page_rank_score_plus_derivative_and_optimal_omega()
 
 # Voila
 # 1. Neighbors of each node
