@@ -29,7 +29,7 @@ neighbor_dict = {}
 for node in original_graph.nodes():
     neighbor_dict[int(node)] = list(original_graph.neighbors(node))
 
-feature_vector = labeled_graph.create_feature_vector()
+feature_vector = labeled_graph.create_feature_vector(extended_graph)
 
 original_nodes = np.asarray(list(original_graph.nodes()))
 extended_nodes = np.asarray(list(extended_graph.nodes()))
@@ -44,7 +44,6 @@ def generate_page_rank_score_plus_derivative_and_optimal_omega():
     v = V[10]
     u = V[4]
     Xe = feature_vector
-
     algo2_object = gradient_ascent.Algorithm2(1.0, u, v, 4, 10, initial_omega,
                                               neighbor_dict, Xe, V_L_ext, V)
     # Q = algo2_object.generate_full_transition_probability_matrix_Q(V, initial_omega)
