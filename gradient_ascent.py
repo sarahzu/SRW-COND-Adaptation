@@ -92,6 +92,23 @@ class Algorithm2:
                 f_omega = 0
         return f_omega
 
+    def d_f_omega(self, x):
+        """
+        Derivative Sigmund Function
+
+        :param x: function parameter
+        :return:  derivative sigmund function result
+        """
+        if math.isnan(x):
+            d_f_omega = 0
+        else:
+            if (1.0 + np.exp(x * (-1))) != 0:
+                d_f_omega = (1.0 / (1.0 + np.exp(-x))) \
+                            - np.power((1.0/(1.0 + np.exp(-x))), 2)
+            else:
+                d_f_omega = 0
+        return d_f_omega
+
     def get_transition_prob_matrix_Q(self, u, v, omega):  # , E):
         """
         generate the transition probability matrix Q for the edge (u, v).
