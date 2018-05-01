@@ -7,7 +7,7 @@ import math
 
 class Algorithm3:
 
-    iteration_max = 2
+    iteration_max = 5
 
     def __init__(self, omega, Xe, neighbors):
         self.omega = omega

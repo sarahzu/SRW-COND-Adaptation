@@ -8,7 +8,7 @@ import derivatives_of_the_random_walk
 
 class Algorithm2:
 
-    iteration_max = 2
+    iteration_max = 5
 
     def __init__(self, learning_rate, u, v, index_u, index_v,
                  initial_omega, neighbors, Xe, V_L_ext, V):
@@ -319,8 +319,9 @@ class Algorithm2:
         counter = 0
 
         Q = self.generate_full_transition_probability_matrix_Q(V, omega)
-
-        while self.get_j_omega(V_L_ext, V, omega, Q) != prev_j_omega:
+        j_omega = self.get_j_omega(V_L_ext, V, omega, Q)
+        while j_omega != prev_j_omega:
+            prev_j_omega = j_omega
             if counter >= self.iteration_max:
                 break
             counter += 1
@@ -343,6 +344,7 @@ class Algorithm2:
                         V_L_ext, V, omega, Q)
 
             Q = self.generate_full_transition_probability_matrix_Q(V, omega)
+            j_omega = self.get_j_omega(V_L_ext, V, omega, Q)
 
         return omega
 
