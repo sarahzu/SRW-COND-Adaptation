@@ -32,7 +32,7 @@ feature_vector = labeled_graph.create_feature_vector(extended_graph)
 
 def generate_page_rank_score_plus_derivative_and_optimal_omega():
     # initial_omega = np.empty([1])
-    initial_omega = np.array([1, 1, 1])
+    initial_omega = np.array([1.0, 1.0, 1.0])
     print('\n\n')
     print('Beginning SRW-COND-Algorithm\n')
     V = original_nodes
@@ -42,10 +42,11 @@ def generate_page_rank_score_plus_derivative_and_optimal_omega():
     Xe = feature_vector
     algo2_object = gradient_ascent.Algorithm2(1.0, u, v, 4, 10, initial_omega, neighbor_dict, Xe, V_L_ext, V)
     omega = algo2_object.gradient_ascent()
-    algo3_object = derivatives_of_the_random_walk.Algorithm3(omega, Xe, neighbor_dict)
-    Q = algo2_object.generate_full_transition_probability_matrix_Q(V, omega)
+    algo3_object = derivatives_of_the_random_walk.Algorithm3(omega, Xe,
+                                                              neighbor_dict)
+    Q = algo2_object.generate_full_transition_probability_matrix_Q(V_L_ext, omega)
     print("Q: \n", Q)
-    pT, d_pT = algo3_object.derivatives_of_the_random_walk(V, Q)
+    pT, d_pT = algo3_object.derivatives_of_the_random_walk(V_L_ext, Q)
     print("Page Rank: \n", pT, "\nDerivative Page Rank: \n", d_pT, "\nOmega: \n", omega)
 
 

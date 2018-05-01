@@ -34,8 +34,9 @@ class Algorithm2:
         """
         V_without_first_element = V[1:]
         Q = np.full((len(V), len(V)),1)
+        Q = Q.astype(float)
         for u, index_u in zip(V, range(0, len(V))):
-            for v, index_v in zip(V_without_first_element, range(0, len(V_without_first_element))):
+            for v, index_v in zip(V, range(0, len(V))):
                 Q_uv = self.get_transition_prob_matrix_Q(u, v, omega)
                 Q[index_u][index_v] = Q_uv
                 # print(Q_uv)
@@ -171,10 +172,10 @@ class Algorithm2:
         if sum_pv_in_V != 0:
             j_omega = sum_pu_in_V_L_ext / sum_pv_in_V
         else:
-            j_omega = 0
+            j_omega = 0.0
         return j_omega
 
-    def get_derivative_of_j_omega(self, V_L_ext, V, omega, Q, p):
+    def get_derivative_of_j_omega(self, V_L_ext, V, omega, Q, p, d_p):
         """
         generate the derivative of j(omega) with the quotient rule
 
@@ -183,10 +184,10 @@ class Algorithm2:
         :param omega:   feature weight vector
         :return:        j'(omega) derived after omega
         """
-        sum_derivative_pu_in_V_L_ext = self.get_sum_derivative_pv_in_V(V_L_ext, omega, Q, p)
+        sum_derivative_pu_in_V_L_ext = self.get_sum_derivative_pv_in_V(V_L_ext, omega, Q, d_p)
         sum_pv_in_V = self.get_sum_pv_in_V(V, omega, Q, p)
         sum_pu_in_V_L_ext = self.get_sum_pv_in_V(V_L_ext, omega, Q, p)
-        sum_derivative_pv_in_V = self.get_sum_derivative_pv_in_V(V, omega, Q, p)
+        sum_derivative_pv_in_V = self.get_sum_derivative_pv_in_V(V, omega, Q, d_p)
 
         derivative_j_omega = \
             ((sum_derivative_pu_in_V_L_ext * sum_pv_in_V) - (sum_pu_in_V_L_ext
@@ -202,7 +203,7 @@ class Algorithm2:
         :param V_L_ext: extended set of nodes
         :return:        probability sum
         """
-        summed_pu = 0
+        summed_pu = 0.0
         for u, index_u in zip(V_L_ext, range(0, len(V_L_ext))):
             summed_pu += self.get_pu(index_u, V_L_ext, omega, Q, p)
         return summed_pu
@@ -234,13 +235,13 @@ class Algorithm2:
         :param V:   seed nodes
         :return:    probability sum
         """
-        summed_pv = 0
+        summed_pv = 0.0
         for index_v in range(0, len(V)):
             # print("v in V:", v)
             summed_pv += self.get_pu(index_v, V, omega, Q, p)
         return summed_pv
 
-    def get_sum_derivative_pv_in_V(self, V, omega, Q, p):
+    def get_sum_derivative_pv_in_V(self, V, omega, Q, d_p):
         """
         return the sum of all derivative of the probabilities of all nodes in
         the seed node set
@@ -253,15 +254,17 @@ class Algorithm2:
 
             d_omega = omega #np.gradient(omega)
             print('Omega: ' + str(d_omega))
-            pv = self.get_pu(v_index, V, omega, Q, p)
+            d_pu = self.get_pu(v_index, V, omega, Q, d_p)
             #if d_omega != 0:
-            try:
-                d_pv = diff(pv) / d_omega
-            except:
-                d_pv = 0
+            # try:
+            #     # FIXME
+            #     # d_pv = diff(pv) / d_omega
+            #     d_pv = diff(pv) / d_omega
+            # except:
+            #     d_pv = 0
             #else:
             #    d_pv = pv
-            summed_derivative_pv += d_pv
+            summed_derivative_pv += d_pu[0]
         return summed_derivative_pv
 
     # def get_pu(self, u):
@@ -357,19 +360,19 @@ class Algorithm2:
             # compute pT and derivative of pT with Algorithm 3
             p, d_p = derivatives_of_the_random_walk.Algorithm3(
                 omega, self.Xe, self.neighbors).derivatives_of_the_random_walk(
-                self.V, Q)
+                self.V_L_ext, Q)
             for k in range(0, len(omega)):
                 if k > 0:
                     omega[k] = omega[k - 1] \
                                + (self.learning_rate
                                   * self.get_derivative_of_j_omega(
 
-                        V_L_ext, V, omega, Q, p))
+                        V_L_ext, V, omega, Q, p, d_p))
                     #print('Omega: '+str(omega))
                 else:
                     omega[k] = self.learning_rate \
                                * self.get_derivative_of_j_omega(
-                        V_L_ext, V, omega, Q, p)
+                        V_L_ext, V, omega, Q, p, d_p)
 
             Q = self.generate_full_transition_probability_matrix_Q(V, omega)
             j_omega = self.get_j_omega(V_L_ext, V, omega, Q, p)
