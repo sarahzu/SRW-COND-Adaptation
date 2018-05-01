@@ -308,9 +308,9 @@ class Algorithm2:
                     pT:         page rank score
                     d_pT:       derivative page rank score
         """
-        omega = np.empty([len(self.initial_omega)])
-        for k in range(0, len(omega)):
-            omega[k] = 0
+        omega = np.zeros([len(self.initial_omega)])
+        #for k in range(0, len(omega)):
+        #    omega[k] = 0
 
         prev_j_omega = -1
 
