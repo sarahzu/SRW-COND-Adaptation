@@ -37,7 +37,7 @@ extended_nodes = np.asarray(list(extended_graph.nodes()))
 
 def generate_page_rank_score_plus_derivative_and_optimal_omega():
     # initial_omega = np.empty([1])
-    initial_omega = np.array([1,1,1])
+    initial_omega = np.array([1.0, 1.0, 1.0])
     print('\n\n')
     print('Beginning SRW-COND-Algorithm\n')
     print("initial omega:", initial_omega)
