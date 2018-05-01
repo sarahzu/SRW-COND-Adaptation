@@ -29,6 +29,8 @@ neighbor_dict = {}
 for node in original_graph.nodes():
     neighbor_dict[int(node)] = list(original_graph.neighbors(node))
 
+print('Calculate Feature Vector...\n')
+
 feature_vector = labeled_graph.create_feature_vector(extended_graph)
 
 original_nodes = np.asarray(list(original_graph.nodes()))
@@ -40,7 +42,7 @@ def generate_page_rank_score_plus_derivative_and_optimal_omega():
     initial_omega = np.array([1,1,1])
     print('\n\n')
     print('Beginning SRW-COND-Algorithm\n')
-    print("initial omega:", initial_omega)
+    print("Initial omega: ", initial_omega)
     V = original_nodes
     V_L_ext = extended_nodes
     v = V[10]
@@ -48,8 +50,7 @@ def generate_page_rank_score_plus_derivative_and_optimal_omega():
     Xe = feature_vector
     algo2_object = gradient_ascent.Algorithm2(1.0, u, v, 4, 10, initial_omega,
                                               neighbor_dict, Xe, V_L_ext, V)
-    # Q = algo2_object.generate_full_transition_probability_matrix_Q(V, initial_omega)
-    # print(Q)
+
     omega = algo2_object.gradient_ascent()
     algo3_object = derivatives_of_the_random_walk.Algorithm3(omega, Xe,
                                                               neighbor_dict)

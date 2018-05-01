@@ -251,7 +251,6 @@ class Algorithm2:
         summed_derivative_pv = 0
         for v_index in range(0, len(V)):
             d_omega = omega[0] #np.gradient(omega)
-            print('Omega: ' + str(d_omega))
             pv = self.get_pu(v_index, V, omega, Q)
             if d_omega != 0:
                 try:
@@ -358,11 +357,13 @@ class Algorithm2:
                                + (self.learning_rate
                                   * self.get_derivative_of_j_omega(
                         V_L_ext, V, omega, Q))
-                    #print('Omega: '+str(omega))
+                    print('Omega: '+str(omega))
                 else:
                     omega[k] = self.learning_rate \
                                * self.get_derivative_of_j_omega(
                         V_L_ext, V, omega, Q)
+                    print('Omega: '+str(omega))
+
 
             Q = self.generate_full_transition_probability_matrix_Q(V, omega)
             j_omega = self.get_j_omega(V_L_ext, V, omega, Q)
