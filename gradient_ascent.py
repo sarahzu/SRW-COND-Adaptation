@@ -59,11 +59,11 @@ class Algorithm2:
     def get_Xe(self, u, v):
         # Xe = {('161148986', '56777838'): [1], ...}
         # print((u, v))
-        if self.Xe.get((u, v)):
-            Xe_uv = np.array([2])
-        else:
-            Xe_uv = np.array([1])
-        return Xe_uv
+        # if self.Xe.get((u, v)):
+        #     Xe_uv = self.Xe.get((u, v))
+        # else:
+        #     Xe_uv = np.array([0, 0, 0])
+        return self.Xe.get((u, v))
 
     # TODO: generate V_L_ext
     def get_V_L_ext(self):
