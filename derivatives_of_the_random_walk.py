@@ -20,7 +20,7 @@ class Algorithm3:
         derivatives in form of vector d_p.
 
         :param V:           seed set
-        :param u:           node u
+        :param Q:           transition probability matrix
         :return:    p:      page rank score vector
                     d_p:    derivative page rank score vector
         """
@@ -39,14 +39,12 @@ class Algorithm3:
         for u_index, k in zip(range(0, len(V)), range(0, len(self.omega))):
             d_p[u_index][k] = 0
 
-        # Q = gradient_ascent.Algorithm2.get_transition_prob_matrix_Q(
-        #     gradient_ascent.Algorithm2, u, v, self.omega)
-
         prev_p = np.empty([len(V)])
         prev_d_p = np.empty([len(V), len(self.omega)])
         first = True
         counter = 0
-        # print("p & prev p:", p, prev_p)
+
+        # p
         while not np.array_equal(p, prev_p) or first:
             if counter >= self.iteration_max:
                 break
@@ -59,7 +57,7 @@ class Algorithm3:
                 else:
                     p[u_index] = 0
 
-        # derivative
+        # derivative d_p
         for k in range(0, len(self.omega)):
             first = True
             counter = 0
@@ -75,29 +73,27 @@ class Algorithm3:
         return p, d_p
 
     def get_derivative_pu(self, u, u_index, omega, p, Q):
-        # try:
-        #     u_index = list(Q).index(u)
-        # except ValueError:
-        #     return 0
+        """
+        get the derivative of the visiting probability of node u.
 
-        d_omega = omega
+        :param u:           given node
+        :param u_index:     index of given node
+        :param omega:       feature weight vector
+        :param p:           page rank score vector
+        :param Q:           transition probability matrix
+        :return:
+        """
+
         sum_d_pj_times_Q_ju = 0
         sum_pj_times_d_Q_ju = 0
 
         for j in range(0, len(p)):
             p_j = p[j]
-            #TODO: Change in the end
-            # try:
-            #     d_pj = diff(p_j) / d_omega
-            # except:
-            #     d_pj = 0
             Q_ju = Q[j][u_index]
             sum_d_pj_times_Q_ju += p_j * Q_ju
 
         for j in range(0, len(p)):
             p_j = p[j]
-            # Q_ju = Q[j][u]
-            # d_Q_ju = diff(Q_ju) / d_omega
             d_Q_ju = self.get_d_Q_ju(j, u, self.neighbors, omega)
             sum_pj_times_d_Q_ju += p_j * d_Q_ju
 
@@ -106,7 +102,7 @@ class Algorithm3:
     def get_d_Q_ju(self, j, u, neighbors, omega):
         """
         Compute the derivative of the transition matrix at position (j, u)
-        (Qju)
+        (Q_ju)
 
         :param j:           given node j
         :param u:           given node u
@@ -121,7 +117,7 @@ class Algorithm3:
 
         f_omega_of_omega_and_Xe_ju = \
             self.f_omega(np.dot(omega.T, self.get_Xe(j, u)))
-        # d_f_omega_of_omega_and_Xe_ju = diff(f_omega_of_omega_and_Xe_ju) / omega
+
         d_f_omega_of_omega_and_Xe_ju = self.d_f_omega(np.dot(omega.T, self.get_Xe(j, u)))
 
         first_formula_part = \
@@ -132,17 +128,22 @@ class Algorithm3:
         sum_d_f_omega_of_feature_vector_of_neighbors = 0
         for i in neighbors:
             sum_d_f_omega_of_feature_vector_of_neighbors += self.d_f_omega(np.dot(omega.T, self.get_Xe(j, i)))
-                #diff(self.f_omega(np.dot(omega.T, self.get_Xe(j, i)))) / omega
 
         second_formula_part = f_omega_of_omega_and_Xe_ju \
                               * sum_d_f_omega_of_feature_vector_of_neighbors / \
-                              np.power(sum_d_f_omega_of_feature_vector_of_neighbors,
-                                  2)
+                              np.power(sum_d_f_omega_of_feature_vector_of_neighbors,2)
 
         d_Q_ju = first_formula_part - second_formula_part
         return d_Q_ju
 
     def get_Xe(self, u, v):
+        """
+        get the feature vector of edge (u, v).
+
+        :param u:   given node u
+        :param v:   given node v
+        :return:    feature vector for edge (u, v)
+        """
         Xe_uv = self.Xe.get((int(u), int(v)))
         if not Xe_uv:
             Xe_uv = np.array([0, 0, 0])
@@ -185,12 +186,13 @@ class Algorithm3:
     @staticmethod
     def get_pj_and_Qju_sum(p, Q, index_u):
         """
-        sum all elements in p and and Qu and return result
+        sum all elements in page rank score vector (p) and
+        transition probability matrix for entry u (Qu) and return the result
 
-        :param u:   index node u
-        :param Q:   transition matrix
-        :param p:   page rank score
-        :return:    sum of all elements p and Qu
+        :param Q:       transition matrix
+        :param p:       page rank score
+        :param index_u: index of node u
+        :return:        sum of all elements p and Qu
         """
         elements_sum = 0
         for j_index in range(0, len(p)):
