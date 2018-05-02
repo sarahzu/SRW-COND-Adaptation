@@ -36,10 +36,9 @@ print('\n\n')
 print('Beginning SRW-COND-Algorithm\n')
 V = original_nodes
 V_L_ext = extended_nodes
-v = V[10]
-u = V[4]
+
 Xe = feature_vector
-algo2_object = gradient_ascent.Algorithm2(1.0, u, v, 4, 10, initial_omega, neighbor_dict, Xe, V_L_ext, V)
+algo2_object = gradient_ascent.Algorithm2(1.0, initial_omega, neighbor_dict, Xe, V_L_ext, V)
 omega = algo2_object.gradient_ascent()
 algo3_object = derivatives_of_the_random_walk.Algorithm3(omega, Xe,
                                                          neighbor_dict)
@@ -48,7 +47,7 @@ print("Q: \n", Q)
 pT, d_pT = algo3_object.derivatives_of_the_random_walk(V_L_ext, Q)
 print("Page Rank: \n", pT, "\nDerivative Page Rank: \n", d_pT, "\nOmega: \n", omega)
 
-node_pt = dict(zip(extended_nodes,pT))
+node_pt = dict(zip(extended_nodes, pT))
 sorted_node_pt = sorted(node_pt.items(), key=operator.itemgetter(1), reverse=True)
 infered_nodes = [k for (k,v) in sorted_node_pt][0:100]
 

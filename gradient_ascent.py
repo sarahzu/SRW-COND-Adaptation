@@ -10,13 +10,8 @@ class Algorithm2:
 
     iteration_max = 5
 
-    def __init__(self, learning_rate, u, v, index_u, index_v,
-                 initial_omega, neighbors, Xe, V_L_ext, V):
+    def __init__(self, learning_rate, initial_omega, neighbors, Xe, V_L_ext, V):
         self.learning_rate = learning_rate
-        self.u = u
-        self.v = v
-        self.index_u = index_u
-        self.index_v = index_v
         self.initial_omega = initial_omega
         self.neighbors = neighbors
         self.Xe = Xe
@@ -144,20 +139,6 @@ class Algorithm2:
 #       Q_uv = 0
 
         return Q_uv
-
-    def get_pT(self, alpha, initial_pT):
-        """
-
-        :param alpha:       restart probability
-        :param Q:           transition probability matrix of node in the graph
-        :param initial_pT:  initial vector of visiting probabilities of all
-                            nodes
-        :return:
-        """
-        Q = self.get_transition_prob_matrix_Q(
-            self.u, self.v, self.initial_omega) #, self.E)
-        pT = (1 - alpha) * np.dot(initial_pT, Q) + alpha * 1
-        return pT
 
     def get_j_omega(self, V_L_ext, V, omega, Q, p):
         """
