@@ -23,30 +23,32 @@ original_nodes = np.asarray(list(original_graph.nodes()))
 extended_nodes = np.asarray(list(extended_graph.nodes()))
 
 # generating dict in the form of {node_1:[neigbors],node_2:[neighbors]}
-print('Calculate Neighbors...\n')
-neighbor_dict = {}
-for node in original_graph.nodes():
-    neighbor_dict[int(node)] = list(original_graph.neighbors(node))
+# print('Calculate Neighbors...\n')
+# neighbor_dict = {}
+# for node in original_graph.nodes():
+#     neighbor_dict[int(node)] = list(original_graph.neighbors(node))
+#
+# print('Calculate Feature Vector...\n')
+# feature_vector = labeled_graph.create_feature_vector(extended_graph)
 
-print('Calculate Feature Vector...\n')
-feature_vector = labeled_graph.create_feature_vector(extended_graph)
+# initial_omega = np.array([1.0, 1.0, 1.0])
+# print('\n\n')
+# print('Beginning SRW-COND-Algorithm\n')
+# V = original_nodes
+# V_L_ext = extended_nodes
+# v = V[10]
+# u = V[4]
+# Xe = feature_vector
+# algo2_object = gradient_ascent.Algorithm2(1.0, u, v, 4, 10, initial_omega, neighbor_dict, Xe, V_L_ext, V)
+# omega = algo2_object.gradient_ascent()
+# algo3_object = derivatives_of_the_random_walk.Algorithm3(omega, Xe,
+#                                                          neighbor_dict)
+# Q = algo2_object.generate_full_transition_probability_matrix_Q(V_L_ext, omega)
+# print("Q: \n", Q)
+# pT, d_pT = algo3_object.derivatives_of_the_random_walk(V_L_ext, Q)
+# print("Page Rank: \n", pT, "\nDerivative Page Rank: \n", d_pT, "\nOmega: \n", omega)
 
-initial_omega = np.array([1.0, 1.0, 1.0])
-print('\n\n')
-print('Beginning SRW-COND-Algorithm\n')
-V = original_nodes
-V_L_ext = extended_nodes
-v = V[10]
-u = V[4]
-Xe = feature_vector
-algo2_object = gradient_ascent.Algorithm2(1.0, u, v, 4, 10, initial_omega, neighbor_dict, Xe, V_L_ext, V)
-omega = algo2_object.gradient_ascent()
-algo3_object = derivatives_of_the_random_walk.Algorithm3(omega, Xe,
-                                                         neighbor_dict)
-Q = algo2_object.generate_full_transition_probability_matrix_Q(V_L_ext, omega)
-print("Q: \n", Q)
-pT, d_pT = algo3_object.derivatives_of_the_random_walk(V_L_ext, Q)
-print("Page Rank: \n", pT, "\nDerivative Page Rank: \n", d_pT, "\nOmega: \n", omega)
+pT = nx.pagerank(extended_graph, weight='weight')
 
 node_pt = dict(zip(extended_nodes,pT))
 sorted_node_pt = sorted(node_pt.items(), key=operator.itemgetter(1), reverse=True)
@@ -56,4 +58,4 @@ for node in extended_graph.nodes():
     if node in infered_nodes:
         extended_graph.node[node]['leaning'] = 'NewR'
 
-nx.write_graphml(extended_graph,'./data_2/clean_data/result.graphml')
+nx.write_graphml(extended_graph,'./data_2/clean_data/result_pT.graphml')
