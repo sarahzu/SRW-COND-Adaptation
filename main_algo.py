@@ -45,6 +45,7 @@ V_L_ext = np.asarray(list(extended_graph.nodes()))
 
 # Calculate optimal omega
 algo2_object = gradient_ascent.Algorithm2(1.0, V[10], V[4], 4, 10, initial_omega, neighbor_dict, Xe, V_L_ext, V)
+
 omega = algo2_object.gradient_ascent()
 
 # Calculate Transition Matrix
