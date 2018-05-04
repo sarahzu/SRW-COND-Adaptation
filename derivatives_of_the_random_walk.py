@@ -75,11 +75,15 @@ class Algorithm3:
         return p, d_p
 
     def get_derivative_pu(self, u, u_index, omega, p, Q):
-        # try:
-        #     u_index = list(Q).index(u)
-        # except ValueError:
-        #     return 0
+        """
 
+        :param u:
+        :param u_index:
+        :param omega:
+        :param p:
+        :param Q:
+        :return:
+        """
         d_omega = omega
         sum_d_pj_times_Q_ju = 0
         sum_pj_times_d_Q_ju = 0
@@ -143,6 +147,12 @@ class Algorithm3:
         return d_Q_ju
 
     def get_Xe(self, u, v):
+        """
+
+        :param u:
+        :param v:
+        :return:
+        """
         Xe_uv = self.Xe.get((int(u), int(v)))
         if not Xe_uv:
             Xe_uv = np.array([0, 0, 0])

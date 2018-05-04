@@ -363,6 +363,10 @@ class GraphFactory:
 
 
     def create_labeled_subgraph(self):
+        """
+        Creates a subgraph containing only the nodes that have a value different from "Unknown" under leaning
+        :return: SubGraph
+        """
         labeled_nodes = []
         for (p, d) in self.graph.nodes(data=True):
             if (d['leaning'] == 'R') or (d['leaning'] == 'D'):
@@ -370,6 +374,10 @@ class GraphFactory:
         return nx.subgraph(self.graph, labeled_nodes)
 
     def create_unlabeled_subgraph(self):
+        """
+        Creates a subgraph containing only the nodes that have a value equals to "Unknown" under leaning
+        :return: SubGraph
+        """
         unlabeled_nodes = []
         for (p, d) in self.graph.nodes(data=True):
             if (d['leaning'] == 'Unknown'):
@@ -377,6 +385,14 @@ class GraphFactory:
         return nx.subgraph(self.graph, unlabeled_nodes)
 
     def create_feature_vector(self, graph = None):
+        """
+        Generates a vector that sepcifies for each edge:
+            - common hashtags for both nodes
+            - common usermentions for both nodes
+            - the edge weight
+        :param graph: If not specified self.graph is taken
+        :return: Feature vector for every edge
+        """
         if graph == None:
             used_graph = self.graph
         else:
@@ -425,7 +441,13 @@ class GraphFactory:
                 feature_vector[(edge[0], edge[1])] = [0,0,0]
         return feature_vector
 
-    def extend_labeled_graph(self):
+    def extend_labeled_graph(self,number_of_comm = 10, number_of_top_comm = 5):
+        """
+        Extends self.graph through taking the top communities and adding unlabeled nodes to the original graph
+        :param number_of_comm: Amount of communities to use
+        :param number_of_top_comm: Amount of communities to use for extension
+        :return: The extended labeled graph and the original seed node graph
+        """
         la = community.best_partition(self.graph)
         nx.set_node_attributes(self.graph, la, 'community')
         nodes = self.graph.nodes(data=True)
@@ -435,7 +457,7 @@ class GraphFactory:
         for comm in a:
             temp[comm] = [k for k, v in la.items() if v == comm]
 
-        s = sorted(temp, key=lambda k: len(temp[k]), reverse=True)[:10]
+        s = sorted(temp, key=lambda k: len(temp[k]), reverse=True)[:number_of_comm]
         comm_size = {}
         for key in s:
             if key in temp:
@@ -449,10 +471,10 @@ class GraphFactory:
                     count_r += 1
             dict_leaning_amount[comm] = count_r
         sort_lean = sorted(dict_leaning_amount.items(), key=operator.itemgetter(1), reverse=True)
-        top_3 = [k for k, v in sort_lean][0:3]
+        top_x = [k for k, v in sort_lean][0:number_of_top_comm]
 
         extendible_nodes = []
-        for comm in top_3:
+        for comm in top_x:
             nodes = temp[comm]
             for node in nodes:
                 if self.graph.node[node]['leaning'] == 'Unknown':
@@ -464,8 +486,7 @@ class GraphFactory:
 
         extended_graph = nx.subgraph(self.graph, list(extendible_node_Set))
         return original_graph,extended_graph
-        #self.save_as_subgraph(original_graph,'original_graph')
-        #self.save_as_subgraph(extended_graph,'extended_graph')
+
 
 """
 The following methods __btwn_pool, __partitions and calculate_betweenness where taken from

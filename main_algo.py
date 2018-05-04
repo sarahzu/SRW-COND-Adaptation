@@ -52,7 +52,7 @@ pT = nx.pagerank(extended_graph, weight='weight')
 
 node_pt = dict(zip(extended_nodes,pT))
 sorted_node_pt = sorted(node_pt.items(), key=operator.itemgetter(1), reverse=True)
-infered_nodes = [k for (k,v) in sorted_node_pt][0:100]
+infered_nodes = [k for (k,v) in sorted_node_pt][0:500]
 
 for node in extended_graph.nodes():
     if node in infered_nodes:
