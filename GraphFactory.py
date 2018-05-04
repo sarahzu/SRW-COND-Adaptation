@@ -16,6 +16,7 @@ class GraphFactory:
     """
     GraphFactory-Class contains all relevant class-variables and methods. Represents a nx.Graph()-object
     """
+
     def __init__(self, name_of_graph):
         """
         Initializes graph and gives name to graph
@@ -44,14 +45,13 @@ class GraphFactory:
         node = int(node)
         label = str(label)
         if not self.graph.has_node(node):
-            self.graph.add_node(node, weight = 1, label = label, leaning = leaning)
+            self.graph.add_node(node, weight=1, label=label, leaning=leaning)
         else:
             self.graph.node[node]['weight'] += 1
             self.graph.node[node]['label'] = label
             self.graph.node[node]['leaning'] = leaning
 
-
-    def add_edge(self, node_1, label_1, leaning_1 ,node_2, label_2, leaning_2):
+    def add_edge(self, node_1, label_1, leaning_1, node_2, label_2, leaning_2):
         """
         Method to add edge to the graph-object. Handles increasing of 'weight' attribute of each edge and the related 
         nodes automatically each time an edge gets added multiple times.
@@ -72,10 +72,10 @@ class GraphFactory:
 
         if not self.graph.has_edge(node_1, node_2):
             if not self.graph.has_node(node_1):
-                self.graph.add_node(node_1, weight = 1, label = label_1, leaning = leaning_1)
+                self.graph.add_node(node_1, weight=1, label=label_1, leaning=leaning_1)
             if not self.graph.has_node(node_2):
-                self.graph.add_node(node_2, weight = 1, label = label_2, leaning = leaning_2)
-            self.graph.add_edge(node_1, node_2, weight =  1)
+                self.graph.add_node(node_2, weight=1, label=label_2, leaning=leaning_2)
+            self.graph.add_edge(node_1, node_2, weight=1)
         else:
             self.graph[node_1][node_2]['weight'] += 1
 
@@ -223,7 +223,7 @@ class GraphFactory:
             if edge[2]['weight'] < edge_weight:
                 edges_to_remove.append(edge)
 
-        print(".......... Removing self refering edges(" + str(len(edges_to_remove))+')')
+        print(".......... Removing self refering edges(" + str(len(edges_to_remove)) + ')')
         self.graph.remove_edges_from(edges_to_remove)
 
         nodes_to_remove = []
@@ -250,6 +250,7 @@ class GraphFactory:
         """
         Class to pack all the Information on the applied Pruning that has been done on current graph-object.
         """
+
         def __init__(self):
             """
             Sets all pruning-info to 0.
@@ -284,11 +285,11 @@ class GraphFactory:
         print("Calculating Stats")
         if degree:
             print(".......... Degree")
-            q={}
-            for (k,v) in self.graph.degree():
-                q[k]=v
+            q = {}
+            for (k, v) in self.graph.degree():
+                q[k] = v
             deg = list(self.graph.degree())
-            nx.set_node_attributes(self.graph, q,'Degree')
+            nx.set_node_attributes(self.graph, q, 'Degree')
         if closeness:
             print(".......... Closeness")
             close = nx.closeness_centrality(self.graph)
@@ -305,15 +306,13 @@ class GraphFactory:
         """
         self.community_partitions = community.best_partition(self.graph)
 
-
     def save_as_subgraph(self, subgraph, name):
         sub_nodes = list(subgraph.nodes())
         sub_dataframe = self.dataframe[self.dataframe['u_id'].isin(sub_nodes)]
-        sub_dataframe = sub_dataframe.set_index('u_id',drop=False)
+        sub_dataframe = sub_dataframe.set_index('u_id', drop=False)
         sub_graph = GraphFactory(name)
         sub_graph.dataframe = sub_dataframe
         self.subgraphs.append(sub_graph)
-
 
     def create_graphs_from_dataframe(self, on_key, path_to_csv):
         """
@@ -335,14 +334,14 @@ class GraphFactory:
         if on_key == 'QT_REP':
             print('Creating Graph using Quotes and Replies')
             self.dataframe = dataframe[(dataframe.QT == 1) | (dataframe.is_reply == 1)]
-            self.dataframe = self.dataframe.set_index('u_id',drop=False)
+            self.dataframe = self.dataframe.set_index('u_id', drop=False)
             for row in self.dataframe.itertuples():
                 leaning_2 = row.leaning
                 if row.QT == 1:
                     temp = self.dataframe[self.dataframe['u_id'] == row.q_uid]
                     try:
                         leaning_1 = temp.at[int(row.q_uid), 'leaning']
-                        if isinstance(leaning_1,np.ndarray):
+                        if isinstance(leaning_1, np.ndarray):
                             leaning_1 = max(set(leaning_1.tolist()), key=leaning_1.tolist().count)
                     except:
                         leaning_1 = 'Unknown'
@@ -351,16 +350,16 @@ class GraphFactory:
                 else:
                     temp = self.dataframe[self.dataframe['u_id'] == row.in_reply_to_user_id_str]
                     try:
-                        leaning_1 = temp.at[int(row.in_reply_to_user_id_str),'leaning']
-                        if isinstance(leaning_1,np.ndarray):
+                        leaning_1 = temp.at[int(row.in_reply_to_user_id_str), 'leaning']
+                        if isinstance(leaning_1, np.ndarray):
                             leaning_1 = max(set(leaning_1.tolist()), key=leaning_1.tolist().count)
                     except:
                         leaning_1 = 'Unknown'
                     self.add_node(row.in_reply_to_user_id_str, row.in_reply_to_screen_name, leaning_1)
-                    self.add_edge(row.in_reply_to_user_id_str, row.in_reply_to_screen_name, leaning_1,row.u_id, row.screen_name,leaning_2)
+                    self.add_edge(row.in_reply_to_user_id_str, row.in_reply_to_screen_name, leaning_1, row.u_id,
+                                  row.screen_name, leaning_2)
             self.add_stats(degree=True, betweenness=False, closeness=False)
             self.print_info()
-
 
     def create_labeled_subgraph(self):
         """
@@ -384,12 +383,12 @@ class GraphFactory:
                 unlabeled_nodes.append(p)
         return nx.subgraph(self.graph, unlabeled_nodes)
 
-    def create_feature_vector(self, graph = None):
+    def create_feature_vector(self, graph=None):
         """
         Generates a vector that sepcifies for each edge:
             - common hashtags for both nodes
             - common usermentions for both nodes
-            - the edge weight
+            - the edge weight specified through amount of interaction between two nodes
         :param graph: If not specified self.graph is taken
         :return: Feature vector for every edge
         """
@@ -399,35 +398,35 @@ class GraphFactory:
             used_graph = graph
         feature_vector = {}
         for edge in used_graph.edges(data=True):
-            node_1, node_2 = edge[0],edge[1]
+            node_1, node_2 = edge[0], edge[1]
             try:
-                node_1_hashtags = self.dataframe.at[node_1,'hashtags']
-                node_2_hashtags = self.dataframe.at[node_2,'hashtags']
+                node_1_hashtags = self.dataframe.at[node_1, 'hashtags']
+                node_2_hashtags = self.dataframe.at[node_2, 'hashtags']
                 node_1_mentions = self.dataframe.at[node_1, 'usermentions']
                 node_2_mentions = self.dataframe.at[node_2, 'usermentions']
 
-                if isinstance(node_1_hashtags,np.ndarray):
+                if isinstance(node_1_hashtags, np.ndarray):
                     hashtags_1 = node_1_hashtags.tolist()
                     hashtags_1 = [ast.literal_eval(i) for i in hashtags_1]
                     hashtags_1 = [item for sublist in hashtags_1 for item in sublist]
                 else:
                     hashtags_1 = []
 
-                if isinstance(node_2_hashtags,np.ndarray):
+                if isinstance(node_2_hashtags, np.ndarray):
                     hashtags_2 = node_2_hashtags.tolist()
                     hashtags_2 = [ast.literal_eval(i) for i in hashtags_2]
                     hashtags_2 = [item for sublist in hashtags_2 for item in sublist]
                 else:
                     hashtags_2 = []
 
-                if isinstance(node_1_mentions,np.ndarray):
+                if isinstance(node_1_mentions, np.ndarray):
                     user_mentions_1 = node_1_mentions.tolist()
                     user_mentions_1 = [ast.literal_eval(i) for i in user_mentions_1]
                     user_mentions_1 = [item for sublist in user_mentions_1 for item in sublist]
                 else:
                     user_mentions_1 = []
 
-                if isinstance(node_2_mentions,np.ndarray):
+                if isinstance(node_2_mentions, np.ndarray):
                     user_mentions_2 = node_2_mentions.tolist()
                     user_mentions_2 = [ast.literal_eval(i) for i in user_mentions_2]
                     user_mentions_2 = [item for sublist in user_mentions_2 for item in sublist]
@@ -436,12 +435,12 @@ class GraphFactory:
 
                 feature_1 = len(set(hashtags_1).intersection(set(hashtags_2)))
                 feature_2 = len(set(user_mentions_1).intersection(set(user_mentions_2)))
-                feature_vector[(edge[0],edge[1])] = [feature_1,feature_2,edge[2]['weight']]
+                feature_vector[(edge[0], edge[1])] = [feature_1, feature_2, edge[2]['weight']]
             except:
-                feature_vector[(edge[0], edge[1])] = [0,0,0]
+                feature_vector[(edge[0], edge[1])] = [0, 0, 0]
         return feature_vector
 
-    def extend_labeled_graph(self,number_of_comm = 10, number_of_top_comm = 5):
+    def extend_labeled_graph(self, number_of_comm=10, number_of_top_comm=5):
         """
         Extends self.graph through taking the top communities and adding unlabeled nodes to the original graph
         :param number_of_comm: Amount of communities to use
@@ -485,7 +484,7 @@ class GraphFactory:
         extendible_node_Set = set(extendible_nodes)
 
         extended_graph = nx.subgraph(self.graph, list(extendible_node_Set))
-        return original_graph,extended_graph
+        return original_graph, extended_graph
 
 
 """
@@ -495,6 +494,7 @@ https://blog.dominodatalab.com/social-network-analysis-with-networkx/ (21.4.17 -
 Author: Manojit Nandi, 14.7.15
 Modified: Lenz Baumann 21.4.17
 """
+
 
 def _btwn_pool(G_tuple):
     """
@@ -547,5 +547,3 @@ def calculate_betweenness(graph):
             bt_c[n] += bt[n]
     p.close()
     return bt_c
-
-

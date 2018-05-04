@@ -52,13 +52,13 @@ omega = algo2_object.gradient_ascent()
 Q = algo2_object.generate_full_transition_probability_matrix_Q(V_L_ext, omega)
 
 # Calculate Page Rank and Derivate Page Rank
-algo3_object = derivatives_of_the_random_walk.Algorithm3(omega, Xe,neighbor_dict)
+algo3_object = derivatives_of_the_random_walk.Algorithm3(omega, Xe, neighbor_dict)
 pT, d_pT = algo3_object.derivatives_of_the_random_walk(V_L_ext, Q)
 
 # Find top n (n=500) nodes with highest page rank
-node_pt = dict(zip(V_L_ext,pT))
+node_pt = dict(zip(V_L_ext, pT))
 sorted_node_pt = sorted(node_pt.items(), key=operator.itemgetter(1), reverse=True)
-infered_nodes = [k for (k,v) in sorted_node_pt][0:500]
+infered_nodes = [k for (k, v) in sorted_node_pt][0:500]
 
 # Infer attribute
 for node in extended_graph.nodes():
@@ -66,4 +66,4 @@ for node in extended_graph.nodes():
         extended_graph.node[node]['leaning'] = 'NewR'
 
 # Save resulting graph to file
-nx.write_graphml(extended_graph,'./data_2/clean_data/result_pT.graphml')
+nx.write_graphml(extended_graph, './data_2/clean_data/result_pT.graphml')

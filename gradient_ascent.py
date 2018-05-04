@@ -7,7 +7,6 @@ import derivatives_of_the_random_walk
 
 
 class Algorithm2:
-
     iteration_max = 5
 
     def __init__(self, learning_rate, initial_omega, neighbors, Xe, V_L_ext, V):
@@ -27,7 +26,7 @@ class Algorithm2:
         :param omega:   given omega for the computation
         :return:        full transition probability matrix
         """
-        Q = np.full((len(V), len(V)),1)
+        Q = np.full((len(V), len(V)), 1)
         Q = Q.astype(float)
         for u, index_u in zip(V, range(0, len(V))):
             for v, index_v in zip(V, range(0, len(V))):
@@ -123,7 +122,7 @@ class Algorithm2:
         else:
             if (1.0 + np.exp(x * (-1))) != 0:
                 d_f_omega = (1.0 / (1.0 + np.exp(-x))) \
-                            - np.power((1.0/(1.0 + np.exp(-x))), 2)
+                            - np.power((1.0 / (1.0 + np.exp(-x))), 2)
             else:
                 d_f_omega = 0
         return d_f_omega
@@ -153,8 +152,8 @@ class Algorithm2:
             # TODO
             Q_uv = a_uv
 
-#       if not Q_uv or math.isnan(Q_uv):
-#       Q_uv = 0
+        #       if not Q_uv or math.isnan(Q_uv):
+        #       Q_uv = 0
 
         return Q_uv
 
@@ -196,7 +195,7 @@ class Algorithm2:
 
         derivative_j_omega = \
             ((sum_derivative_pu_in_V_L_ext * sum_pv_in_V) - (sum_pu_in_V_L_ext
-             * sum_derivative_pv_in_V)) / np.power(sum_pv_in_V, 2)
+                                                             * sum_derivative_pv_in_V)) / np.power(sum_pv_in_V, 2)
 
         return derivative_j_omega
 
@@ -333,7 +332,7 @@ class Algorithm2:
                                + (self.learning_rate
                                   * self.get_derivative_of_j_omega(
 
-                        V_L_ext, V, omega, Q, p, d_p))
+                                V_L_ext, V, omega, Q, p, d_p))
                 else:
                     omega[k] = self.learning_rate \
                                * self.get_derivative_of_j_omega(

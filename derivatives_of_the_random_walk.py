@@ -6,7 +6,6 @@ import math
 
 
 class Algorithm3:
-
     iteration_max = 5
 
     def __init__(self, omega, Xe, neighbors):
@@ -131,7 +130,7 @@ class Algorithm3:
 
         second_formula_part = f_omega_of_omega_and_Xe_ju \
                               * sum_d_f_omega_of_feature_vector_of_neighbors / \
-                              np.power(sum_d_f_omega_of_feature_vector_of_neighbors,2)
+                              np.power(sum_d_f_omega_of_feature_vector_of_neighbors, 2)
 
         d_Q_ju = first_formula_part - second_formula_part
         return d_Q_ju
@@ -178,7 +177,7 @@ class Algorithm3:
         else:
             if (1.0 + np.exp(x * (-1))) != 0:
                 d_f_omega = (1.0 / (1.0 + np.exp(-x))) \
-                            - np.power((1.0/(1.0 + np.exp(-x))), 2)
+                            - np.power((1.0 / (1.0 + np.exp(-x))), 2)
             else:
                 d_f_omega = 0
         return d_f_omega
